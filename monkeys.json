@@ -1,13 +1,15 @@
-{
+﻿{
     "version":  2,
     "items":  [
                   {
                       "id":  "monkey-1",
-                      "title":  "Chimpancé curioso",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pan_troglodytes_troglodytes_in_Cameroon.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Pan_troglodytes_troglodytes_in_Cameroon.jpg&w=480",
+                      "title":  "Chimpanc├® curioso",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg/480px-Pan_troglodytes_troglodytes_in_Cameroon.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pan_troglodytes_troglodytes_in_Cameroon.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Pan_troglodytes_troglodytes_in_Cameroon.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg/480px-Pan_troglodytes_troglodytes_in_Cameroon.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Amcaja",
@@ -21,10 +23,12 @@
                   {
                       "id":  "monkey-2",
                       "title":  "Macaco de Gibraltar",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Barbary_Ape.JPG&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Barbary_Ape.JPG&w=480",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/3d/Barbary_Ape.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Barbary_Ape.jpg/480px-Barbary_Ape.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Barbary_Ape.JPG&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Barbary_Ape.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/3d/Barbary_Ape.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Barbary_Ape.jpg/480px-Barbary_Ape.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "A.S. Whiting",
@@ -37,11 +41,13 @@
                   },
                   {
                       "id":  "monkey-3",
-                      "title":  "Gorila de montaña",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mountain_Gorilla_Bwindi.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Mountain_Gorilla_Bwindi.jpg&w=480",
+                      "title":  "Gorila de monta├▒a",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/87/Mountain_Gorilla_Bwindi.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mountain_Gorilla_Bwindi.jpg/480px-Mountain_Gorilla_Bwindi.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mountain_Gorilla_Bwindi.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Mountain_Gorilla_Bwindi.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/87/Mountain_Gorilla_Bwindi.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mountain_Gorilla_Bwindi.jpg/480px-Mountain_Gorilla_Bwindi.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Yathin S Krishnappa",
@@ -55,10 +61,12 @@
                   {
                       "id":  "monkey-4",
                       "title":  "Babuino chacma",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Chacma_Baboon_Papio_ursinus.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Chacma_Baboon_Papio_ursinus.jpg&w=480",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/e/e0/Chacma_Baboon_Papio_ursinus.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chacma_Baboon_Papio_ursinus.jpg/480px-Chacma_Baboon_Papio_ursinus.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Chacma_Baboon_Papio_ursinus.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Chacma_Baboon_Papio_ursinus.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/e/e0/Chacma_Baboon_Papio_ursinus.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chacma_Baboon_Papio_ursinus.jpg/480px-Chacma_Baboon_Papio_ursinus.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Bernard DUPONT",
@@ -71,11 +79,13 @@
                   },
                   {
                       "id":  "monkey-5",
-                      "title":  "Orangután de Sumatra",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg&w=480",
+                      "title":  "Orangut├ín de Sumatra",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg/480px-Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg/480px-Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "T. R. Shankar Raman",
@@ -88,11 +98,13 @@
                   },
                   {
                       "id":  "monkey-6",
-                      "title":  "Macaco japonés en aguas termales",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_fuscata_fuscata2.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_fuscata_fuscata2.jpg&w=480",
+                      "title":  "Macaco japon├®s en aguas termales",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/06/Macaca_fuscata_fuscata2.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Macaca_fuscata_fuscata2.jpg/480px-Macaca_fuscata_fuscata2.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_fuscata_fuscata2.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_fuscata_fuscata2.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/06/Macaca_fuscata_fuscata2.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Macaca_fuscata_fuscata2.jpg/480px-Macaca_fuscata_fuscata2.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Muhammed Mahdi Karim",
@@ -107,10 +119,12 @@
                   {
                       "id":  "monkey-7",
                       "title":  "Mandril macho adulto",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_at_Singapore_Zoo.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_at_Singapore_Zoo.jpg&w=480",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mandrill_at_Singapore_Zoo.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mandrill_at_Singapore_Zoo.jpg/480px-Mandrill_at_Singapore_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_at_Singapore_Zoo.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_at_Singapore_Zoo.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mandrill_at_Singapore_Zoo.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mandrill_at_Singapore_Zoo.jpg/480px-Mandrill_at_Singapore_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Manfred Werner",
@@ -124,11 +138,13 @@
                   },
                   {
                       "id":  "monkey-8",
-                      "title":  "Lémur de cola anillada",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Lemur_catta_01.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Lemur_catta_01.jpg&w=480",
+                      "title":  "L├®mur de cola anillada",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Lemur_catta_01.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Lemur_catta_01.jpg/480px-Lemur_catta_01.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Lemur_catta_01.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Lemur_catta_01.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/a/a7/Lemur_catta_01.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Lemur_catta_01.jpg/480px-Lemur_catta_01.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Alex Dunkel",
@@ -142,11 +158,13 @@
                   },
                   {
                       "id":  "monkey-9",
-                      "title":  "Gibón de manos blancas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Hylobates_lar_pair_of_white_and_dark_01.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Hylobates_lar_pair_of_white_and_dark_01.jpg&w=480",
+                      "title":  "Gib├│n de manos blancas",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg/480px-Hylobates_lar_pair_of_white_and_dark_01.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Hylobates_lar_pair_of_white_and_dark_01.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Hylobates_lar_pair_of_white_and_dark_01.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg/480px-Hylobates_lar_pair_of_white_and_dark_01.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Frendi Apen Irawan",
@@ -160,11 +178,13 @@
                   },
                   {
                       "id":  "monkey-10",
-                      "title":  "Mono probóscide de Borneo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_Monkey_in_Borneo.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_Monkey_in_Borneo.jpg&w=480",
+                      "title":  "Mono prob├│scide de Borneo",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/e/e7/Proboscis_Monkey_in_Borneo.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Proboscis_Monkey_in_Borneo.jpg/480px-Proboscis_Monkey_in_Borneo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_Monkey_in_Borneo.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_Monkey_in_Borneo.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/e/e7/Proboscis_Monkey_in_Borneo.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Proboscis_Monkey_in_Borneo.jpg/480px-Proboscis_Monkey_in_Borneo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Charles J Sharp",
@@ -178,11 +198,13 @@
                   },
                   {
                       "id":  "monkey-11",
-                      "title":  "Mono araña de manos negras",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Ateles_geoffroyi-edit1.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Ateles_geoffroyi-edit1.jpg&w=480",
+                      "title":  "Mono ara├▒a de manos negras",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/28/Ateles_geoffroyi-edit1.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ateles_geoffroyi-edit1.jpg/480px-Ateles_geoffroyi-edit1.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Ateles_geoffroyi-edit1.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Ateles_geoffroyi-edit1.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/28/Ateles_geoffroyi-edit1.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ateles_geoffroyi-edit1.jpg/480px-Ateles_geoffroyi-edit1.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Hans Hillewaert",
@@ -196,11 +218,13 @@
                   },
                   {
                       "id":  "monkey-12",
-                      "title":  "Tití común",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_jacchus.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_jacchus.jpg&w=480",
+                      "title":  "Tit├¡ com├║n",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/d3/Callithrix_jacchus.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Callithrix_jacchus.jpg/480px-Callithrix_jacchus.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_jacchus.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_jacchus.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/d3/Callithrix_jacchus.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Callithrix_jacchus.jpg/480px-Callithrix_jacchus.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Dario Sanches",
@@ -215,10 +239,12 @@
                   {
                       "id":  "monkey-13",
                       "title":  "Colobo guereza",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Colobus_guereza_by_Yerlan_Mammadov.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Colobus_guereza_by_Yerlan_Mammadov.jpg&w=480",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg/480px-Colobus_guereza_by_Yerlan_Mammadov.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Colobus_guereza_by_Yerlan_Mammadov.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Colobus_guereza_by_Yerlan_Mammadov.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg/480px-Colobus_guereza_by_Yerlan_Mammadov.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Yerlan Mammadov",
@@ -233,10 +259,12 @@
                   {
                       "id":  "monkey-14",
                       "title":  "Capuchino de cabeza negra",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Sapajus_apella.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Sapajus_apella.jpg&w=480",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sapajus_apella.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sapajus_apella.jpg/480px-Sapajus_apella.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Sapajus_apella.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Sapajus_apella.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sapajus_apella.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sapajus_apella.jpg/480px-Sapajus_apella.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Fernando Flores",
@@ -251,10 +279,12 @@
                   {
                       "id":  "monkey-15",
                       "title":  "Siamang",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Siamang_2.jpg&w=600",
-                      "thumb":  "https://commons.wikimedia.org/w/thumb.php?f=Siamang_2.jpg&w=480",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/75/Siamang_2.jpg",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Siamang_2.jpg/480px-Siamang_2.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Siamang_2.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Siamang_2.jpg\u0026w=600",
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/75/Siamang_2.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Siamang_2.jpg/480px-Siamang_2.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "Grendelkhan",
@@ -269,14 +299,14 @@
                   {
                       "id":  "monkey-16",
                       "title":  "Mono ardilla #2",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_02.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_02.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla #2 — Wikimedia Commons",
+                      "attribution":  "Mono ardilla #2 ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey",
                                    "new-world-monkey"
@@ -285,14 +315,14 @@
                   {
                       "id":  "monkey-17",
                       "title":  "Mono ardilla en Phoenix Zoo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Squirrel_monkey_at_the_Phoenix_Zoo.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/0b/Squirrel_Monkey_%285528519628%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Squirrel_monkey_at_the_Phoenix_Zoo.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/0b/Squirrel_Monkey_%285528519628%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla en Phoenix Zoo — Wikimedia Commons",
+                      "attribution":  "Mono ardilla en Phoenix Zoo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey",
                                    "zoo"
@@ -300,15 +330,15 @@
                   },
                   {
                       "id":  "monkey-18",
-                      "title":  "Mono ardilla común",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Common_Squirrel_Monkey.jpg&w=600",
+                      "title":  "Mono ardilla com├║n",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/2d/Common_Squirrel_Monkey.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Common_Squirrel_Monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/2d/Common_Squirrel_Monkey.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla común — Wikimedia Commons",
+                      "attribution":  "Mono ardilla com├║n ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey",
                                    "new-world-monkey"
@@ -317,14 +347,14 @@
                   {
                       "id":  "monkey-19",
                       "title":  "Mono ardilla en la naturaleza",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla en la naturaleza — Wikimedia Commons",
+                      "attribution":  "Mono ardilla en la naturaleza ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey"
                                ]
@@ -332,14 +362,14 @@
                   {
                       "id":  "monkey-20",
                       "title":  "Mono ardilla de perfil",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_2.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/40/Saimiri_sciureus_2.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_2.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/40/Saimiri_sciureus_2.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla de perfil — Wikimedia Commons",
+                      "attribution":  "Mono ardilla de perfil ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey"
                                ]
@@ -347,14 +377,14 @@
                   {
                       "id":  "monkey-21",
                       "title":  "Grupo de monos ardilla",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_3.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/87/Saimiri_sciureus_3.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_3.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/87/Saimiri_sciureus_3.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Grupo de monos ardilla — Wikimedia Commons",
+                      "attribution":  "Grupo de monos ardilla ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey"
                                ]
@@ -362,14 +392,14 @@
                   {
                       "id":  "monkey-22",
                       "title":  "Mono ardilla en el Amazonas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_in_the_Amazon.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/5/50/Saimiri_sciureus_-_Flickr_-_Dick_Culbert.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_in_the_Amazon.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/5/50/Saimiri_sciureus_-_Flickr_-_Dick_Culbert.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla en el Amazonas — Wikimedia Commons",
+                      "attribution":  "Mono ardilla en el Amazonas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey",
                                    "amazon"
@@ -378,14 +408,14 @@
                   {
                       "id":  "monkey-23",
                       "title":  "Mono ardilla en cautiverio",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_zoo.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/33/Saimiri_sciureus_in_Novosibirsk_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_sciureus_zoo.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/33/Saimiri_sciureus_in_Novosibirsk_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla en cautiverio — Wikimedia Commons",
+                      "attribution":  "Mono ardilla en cautiverio ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey",
                                    "zoo"
@@ -394,14 +424,14 @@
                   {
                       "id":  "monkey-24",
                       "title":  "Mono ardilla curioso",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Common_squirrel_monkey_Saimiri_sciureus.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Common_squirrel_monkey_Saimiri_sciureus.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla curioso — Wikimedia Commons",
+                      "attribution":  "Mono ardilla curioso ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey"
                                ]
@@ -409,14 +439,14 @@
                   {
                       "id":  "monkey-25",
                       "title":  "Macaco rhesus",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/d6/Rhesus_macaque_%28Macaca_mulatta_mulatta%29%2C_male%2C_Gokarna.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/d6/Rhesus_macaque_%28Macaca_mulatta_mulatta%29%2C_male%2C_Gokarna.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco rhesus — Wikimedia Commons",
+                      "attribution":  "Macaco rhesus ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque",
                                    "old-world-monkey",
@@ -426,14 +456,14 @@
                   {
                       "id":  "monkey-26",
                       "title":  "Retrato de macaco rhesus",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Rhesus_macaque_portrait.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/df/Rhesus_macaque_Macaca_mulatta_DSC_0184.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Rhesus_macaque_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/df/Rhesus_macaque_Macaca_mulatta_DSC_0184.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de macaco rhesus — Wikimedia Commons",
+                      "attribution":  "Retrato de macaco rhesus ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque"
                                ]
@@ -441,14 +471,14 @@
                   {
                       "id":  "monkey-27",
                       "title":  "Macaco rhesus en la naturaleza",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_monkey.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/d5/Female_and_juvenile_rhesus_macaque_at_Galtaji%2C_Jaipur%2C_Rajasthan%2C_India.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/d5/Female_and_juvenile_rhesus_macaque_at_Galtaji%2C_Jaipur%2C_Rajasthan%2C_India.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco rhesus en la naturaleza — Wikimedia Commons",
+                      "attribution":  "Macaco rhesus en la naturaleza ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque"
                                ]
@@ -456,14 +486,14 @@
                   {
                       "id":  "monkey-28",
                       "title":  "Macaco rhesus comiendo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_eating.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/89/Macaca_mulatta_eating_a_Citrus.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_eating.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/89/Macaca_mulatta_eating_a_Citrus.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco rhesus comiendo — Wikimedia Commons",
+                      "attribution":  "Macaco rhesus comiendo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque"
                                ]
@@ -471,14 +501,14 @@
                   {
                       "id":  "monkey-29",
                       "title":  "Macaco rhesus en India",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Rhesus_macaque_India.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/96/Macaque_India_3.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Rhesus_macaque_India.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/96/Macaque_India_3.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco rhesus en India — Wikimedia Commons",
+                      "attribution":  "Macaco rhesus en India ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque",
                                    "india"
@@ -487,14 +517,14 @@
                   {
                       "id":  "monkey-30",
                       "title":  "Macaco rhesus juvenil",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_juvenile.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/6/6a/Macaca_mulatta_juvenile%2C_Puerto_Rico.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_juvenile.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/6/6a/Macaca_mulatta_juvenile%2C_Puerto_Rico.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco rhesus juvenil — Wikimedia Commons",
+                      "attribution":  "Macaco rhesus juvenil ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque",
                                    "juvenile"
@@ -503,14 +533,14 @@
                   {
                       "id":  "monkey-31",
                       "title":  "Macaco rhesus joven",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Young_Rhesus_macaque.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/00/Young_Rhesus_Macaque_at_Ranthambore.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Young_Rhesus_macaque.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/00/Young_Rhesus_Macaque_at_Ranthambore.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco rhesus joven — Wikimedia Commons",
+                      "attribution":  "Macaco rhesus joven ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque"
                                ]
@@ -518,14 +548,14 @@
                   {
                       "id":  "monkey-32",
                       "title":  "Mono en Agra, India",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Monkey_in_Agra.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/96/Macaque_India_3.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Monkey_in_Agra.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/96/Macaque_India_3.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono en Agra, India — Wikimedia Commons",
+                      "attribution":  "Mono en Agra, India ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque",
                                    "india"
@@ -534,14 +564,14 @@
                   {
                       "id":  "monkey-33",
                       "title":  "Familia de macacos rhesus",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Rhesus_macaque_family.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/81/Rhesus_macaque_monkey_family_D72_16866k.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Rhesus_macaque_family.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/81/Rhesus_macaque_monkey_family_D72_16866k.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Familia de macacos rhesus — Wikimedia Commons",
+                      "attribution":  "Familia de macacos rhesus ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque",
                                    "family"
@@ -549,15 +579,15 @@
                   },
                   {
                       "id":  "monkey-34",
-                      "title":  "Cría de macaco rhesus",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_baby.jpg&w=600",
+                      "title":  "Cr├¡a de macaco rhesus",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/28/006_Baby_rhesus_macaque_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_mulatta_baby.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/28/006_Baby_rhesus_macaque_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Cría de macaco rhesus — Wikimedia Commons",
+                      "attribution":  "Cr├¡a de macaco rhesus ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "rhesus-macaque",
                                    "baby"
@@ -566,14 +596,14 @@
                   {
                       "id":  "monkey-35",
                       "title":  "Capuchino de cara blanca",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Colombian_white-faced_capuchin_%28Cebus_capucinus%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/a/a7/Colombian_white-faced_capuchin_%28Cebus_capucinus%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino de cara blanca — Wikimedia Commons",
+                      "attribution":  "Capuchino de cara blanca ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin",
                                    "new-world-monkey",
@@ -583,14 +613,14 @@
                   {
                       "id":  "monkey-36",
                       "title":  "Capuchino de cabeza blanca",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=White-headed_capuchin.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Colombian_white-faced_capuchin_%28Cebus_capucinus%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=White-headed_capuchin.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/a/a7/Colombian_white-faced_capuchin_%28Cebus_capucinus%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino de cabeza blanca — Wikimedia Commons",
+                      "attribution":  "Capuchino de cabeza blanca ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin"
                                ]
@@ -598,14 +628,14 @@
                   {
                       "id":  "monkey-37",
                       "title":  "Capuchino en Costa Rica",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Capuchin_monkey_Costa_Rica.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/e/e6/Monkey_Costa_Rica_IMG_0209.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Capuchin_monkey_Costa_Rica.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/e/e6/Monkey_Costa_Rica_IMG_0209.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino en Costa Rica — Wikimedia Commons",
+                      "attribution":  "Capuchino en Costa Rica ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin",
                                    "costa-rica"
@@ -614,14 +644,14 @@
                   {
                       "id":  "monkey-38",
                       "title":  "Retrato de capuchino",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_portrait.jpg&w=600",
+                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_portrait.jpg\u0026w=600",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_portrait.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_portrait.jpg\u0026w=600"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de capuchino — Wikimedia Commons",
+                      "attribution":  "Retrato de capuchino ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin"
                                ]
@@ -629,44 +659,44 @@
                   {
                       "id":  "monkey-39",
                       "title":  "Capuchino cara blanca",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=White-faced_capuchin_monkey.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/46/White-faced_Capuchin_Monkey_%2849549848091%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=White-faced_capuchin_monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/46/White-faced_Capuchin_Monkey_%2849549848091%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino cara blanca — Wikimedia Commons",
+                      "attribution":  "Capuchino cara blanca ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin"
                                ]
                   },
                   {
                       "id":  "monkey-40",
-                      "title":  "Capuchino alimentándose",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_feeding.jpg&w=600",
+                      "title":  "Capuchino aliment├índose",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cebus_capucinus_at_the_Bronx_Zoo_004.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_feeding.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cebus_capucinus_at_the_Bronx_Zoo_004.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino alimentándose — Wikimedia Commons",
+                      "attribution":  "Capuchino aliment├índose ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin"
                                ]
                   },
                   {
                       "id":  "monkey-41",
-                      "title":  "Capuchino en el árbol",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Capuchin_monkey_tree.jpg&w=600",
+                      "title":  "Capuchino en el ├írbol",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/42/Cebus_apella_macrocephalus_%28Brown_Capuchin_Monkey%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Capuchin_monkey_tree.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/42/Cebus_apella_macrocephalus_%28Brown_Capuchin_Monkey%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino en el árbol — Wikimedia Commons",
+                      "attribution":  "Capuchino en el ├írbol ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin"
                                ]
@@ -674,14 +704,14 @@
                   {
                       "id":  "monkey-42",
                       "title":  "Capuchino joven",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_juvenile.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/3a/Natural_history_of_the_animal_kingdom_for_the_use_of_young_people_%28Plate_III%29_%285974928010%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_juvenile.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/3a/Natural_history_of_the_animal_kingdom_for_the_use_of_young_people_%28Plate_III%29_%285974928010%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino joven — Wikimedia Commons",
+                      "attribution":  "Capuchino joven ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin",
                                    "juvenile"
@@ -690,14 +720,14 @@
                   {
                       "id":  "monkey-43",
                       "title":  "Capuchino atento",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Capuchin_monkey_look.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/de/Brehm%27s_Life_of_animals_-_a_complete_natural_history_for_popular_home_instruction_and_for_the_use_of_schools._Mammalia_%281896%29_%2820226391329%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Capuchin_monkey_look.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/de/Brehm%27s_Life_of_animals_-_a_complete_natural_history_for_popular_home_instruction_and_for_the_use_of_schools._Mammalia_%281896%29_%2820226391329%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino atento — Wikimedia Commons",
+                      "attribution":  "Capuchino atento ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin"
                                ]
@@ -705,14 +735,14 @@
                   {
                       "id":  "monkey-44",
                       "title":  "Capuchino silvestre",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_wild.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/09/Capuchin_Costa_Rica2.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Cebus_capucinus_wild.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/09/Capuchin_Costa_Rica2.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Capuchino silvestre — Wikimedia Commons",
+                      "attribution":  "Capuchino silvestre ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "capuchin",
                                    "wild"
@@ -720,15 +750,15 @@
                   },
                   {
                       "id":  "monkey-45",
-                      "title":  "Mono probóscide macho adulto",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_Nasalis_larvatus_male_upper_body.jpg&w=600",
+                      "title":  "Mono prob├│scide macho adulto",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/78/Proboscis_monkey_%28Nasalis_larvatus%29_composite.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_Nasalis_larvatus_male_upper_body.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_Nasalis_larvatus_male_upper_body.jpg\u0026w=600"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono probóscide macho adulto — Wikimedia Commons",
+                      "attribution":  "Mono prob├│scide macho adulto ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "proboscis",
                                    "old-world-monkey",
@@ -737,15 +767,15 @@
                   },
                   {
                       "id":  "monkey-46",
-                      "title":  "Mono probóscide hembra",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_Nasalis_larvatus_female.jpg&w=600",
+                      "title":  "Mono prob├│scide hembra",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/5/5a/Proboscis_monkey_%28Nasalis_larvatus%29_female_Labuk_Bay.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_Nasalis_larvatus_female.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/5/5a/Proboscis_monkey_%28Nasalis_larvatus%29_female_Labuk_Bay.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono probóscide hembra — Wikimedia Commons",
+                      "attribution":  "Mono prob├│scide hembra ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "proboscis",
                                    "borneo"
@@ -753,15 +783,15 @@
                   },
                   {
                       "id":  "monkey-47",
-                      "title":  "Cría de mono probóscide",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_baby.jpg&w=600",
+                      "title":  "Cr├¡a de mono prob├│scide",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/28/Proboscis_monkey_%28Nasalis_larvatus%29_female_and_baby.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Proboscis_monkey_baby.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/28/Proboscis_monkey_%28Nasalis_larvatus%29_female_and_baby.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Cría de mono probóscide — Wikimedia Commons",
+                      "attribution":  "Cr├¡a de mono prob├│scide ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "proboscis",
                                    "baby"
@@ -770,14 +800,14 @@
                   {
                       "id":  "monkey-48",
                       "title":  "Mandril en San Francisco",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_At_San_Francisco_Zoo.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mandrill_at_SF_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_At_San_Francisco_Zoo.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mandrill_at_SF_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mandril en San Francisco — Wikimedia Commons",
+                      "attribution":  "Mandril en San Francisco ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "mandrill",
                                    "old-world-monkey",
@@ -788,14 +818,14 @@
                   {
                       "id":  "monkey-49",
                       "title":  "Retrato de mandril",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_Portrait.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/b/b2/Mandrill_portrait%2C_Berlin_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_Portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/b/b2/Mandrill_portrait%2C_Berlin_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de mandril — Wikimedia Commons",
+                      "attribution":  "Retrato de mandril ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "mandrill"
                                ]
@@ -803,14 +833,14 @@
                   {
                       "id":  "monkey-50",
                       "title":  "Mandril en Leipzig",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_Zoo_Leipzig.jpg&w=600",
+                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_Zoo_Leipzig.jpg\u0026w=600",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_Zoo_Leipzig.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Mandrill_Zoo_Leipzig.jpg\u0026w=600"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mandril en Leipzig — Wikimedia Commons",
+                      "attribution":  "Mandril en Leipzig ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "mandrill",
                                    "zoo"
@@ -819,14 +849,14 @@
                   {
                       "id":  "monkey-51",
                       "title":  "Mandril joven",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Young_Mandrill.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/b/b7/Young-Mandrill.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Young_Mandrill.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/b/b7/Young-Mandrill.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mandril joven — Wikimedia Commons",
+                      "attribution":  "Mandril joven ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "mandrill",
                                    "juvenile"
@@ -835,14 +865,14 @@
                   {
                       "id":  "monkey-52",
                       "title":  "Babuino oliva",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Papio_anubis_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/f/fd/Olive_baboon_%28Papio_anubis%29_with_juvenile.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Papio_anubis_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/f/fd/Olive_baboon_%28Papio_anubis%29_with_juvenile.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Babuino oliva — Wikimedia Commons",
+                      "attribution":  "Babuino oliva ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "baboon",
                                    "old-world-monkey",
@@ -852,14 +882,14 @@
                   {
                       "id":  "monkey-53",
                       "title":  "Retrato de babuino oliva",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Olive_baboon_portrait.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/39/Portrait_of_a_disheveled_olive_baboon.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Olive_baboon_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/39/Portrait_of_a_disheveled_olive_baboon.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de babuino oliva — Wikimedia Commons",
+                      "attribution":  "Retrato de babuino oliva ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "baboon"
                                ]
@@ -867,14 +897,14 @@
                   {
                       "id":  "monkey-54",
                       "title":  "Babuino en el lago Manyara",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Baboon_Lake_Manyara.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/a/af/Baboon_Lake_Manyara_Park.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Baboon_Lake_Manyara.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/a/af/Baboon_Lake_Manyara_Park.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Babuino en el lago Manyara — Wikimedia Commons",
+                      "attribution":  "Babuino en el lago Manyara ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "baboon",
                                    "tanzania"
@@ -883,14 +913,14 @@
                   {
                       "id":  "monkey-55",
                       "title":  "Babuino oliva joven",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Olive_baboon_juvenile.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/f/fd/Olive_baboon_%28Papio_anubis%29_with_juvenile.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Olive_baboon_juvenile.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/f/fd/Olive_baboon_%28Papio_anubis%29_with_juvenile.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Babuino oliva joven — Wikimedia Commons",
+                      "attribution":  "Babuino oliva joven ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "baboon",
                                    "juvenile"
@@ -899,14 +929,14 @@
                   {
                       "id":  "monkey-56",
                       "title":  "Babuino gelada",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Gelada_baboon.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/6/69/Southern_gelada_%28Theropithecus_gelada_obscurus%29_male.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Gelada_baboon.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/6/69/Southern_gelada_%28Theropithecus_gelada_obscurus%29_male.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Babuino gelada — Wikimedia Commons",
+                      "attribution":  "Babuino gelada ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gelada",
                                    "old-world-monkey",
@@ -916,14 +946,14 @@
                   {
                       "id":  "monkey-57",
                       "title":  "Theropithecus gelada",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Theropithecus_gelada_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Southern_gelada_%28Theropithecus_gelada_obscura%29_female_with_baby.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Theropithecus_gelada_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/dc/Southern_gelada_%28Theropithecus_gelada_obscura%29_female_with_baby.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Theropithecus gelada — Wikimedia Commons",
+                      "attribution":  "Theropithecus gelada ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gelada",
                                    "africa"
@@ -932,14 +962,14 @@
                   {
                       "id":  "monkey-58",
                       "title":  "Familia de babuinos hamadryas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Hamadryas_baboon_family.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/5/5a/Family_..._%28SINGAPORE_ZOO-HAMADRYAS_BABOON%29_VI_%281018279762%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Hamadryas_baboon_family.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/5/5a/Family_..._%28SINGAPORE_ZOO-HAMADRYAS_BABOON%29_VI_%281018279762%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Familia de babuinos hamadryas — Wikimedia Commons",
+                      "attribution":  "Familia de babuinos hamadryas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "baboon",
                                    "family",
@@ -948,15 +978,15 @@
                   },
                   {
                       "id":  "monkey-59",
-                      "title":  "Macaco japonés en Jigokudani",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Japanese_macaque_Jigokudani_01.jpg&w=600",
+                      "title":  "Macaco japon├®s en Jigokudani",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/8c/Jigokudani_hotspring_in_Nagano_Japan_001.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Japanese_macaque_Jigokudani_01.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/8c/Jigokudani_hotspring_in_Nagano_Japan_001.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco japonés en Jigokudani — Wikimedia Commons",
+                      "attribution":  "Macaco japon├®s en Jigokudani ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "japanese-macaque",
                                    "japan",
@@ -966,14 +996,14 @@
                   {
                       "id":  "monkey-60",
                       "title":  "Macacos japoneses en aguas termales",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Japanese_macaques_in_hot_spring.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/8c/Jigokudani_hotspring_in_Nagano_Japan_001.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Japanese_macaques_in_hot_spring.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/8c/Jigokudani_hotspring_in_Nagano_Japan_001.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macacos japoneses en aguas termales — Wikimedia Commons",
+                      "attribution":  "Macacos japoneses en aguas termales ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "japanese-macaque",
                                    "japan",
@@ -982,15 +1012,15 @@
                   },
                   {
                       "id":  "monkey-61",
-                      "title":  "Macaco japonés joven",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_fuscata_young.jpg&w=600",
+                      "title":  "Macaco japon├®s joven",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/9e/Macaca_fuscata_qtl1.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_fuscata_young.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/9e/Macaca_fuscata_qtl1.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco japonés joven — Wikimedia Commons",
+                      "attribution":  "Macaco japon├®s joven ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "japanese-macaque",
                                    "juvenile"
@@ -999,14 +1029,14 @@
                   {
                       "id":  "monkey-62",
                       "title":  "Retrato del mono de las nieves",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Snow_monkey_portrait.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/b/bc/The_gem_of_the_school_room_-_recitation_book_of_prose_and_poems_%281904%29_%2814784509482%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Snow_monkey_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/b/bc/The_gem_of_the_school_room_-_recitation_book_of_prose_and_poems_%281904%29_%2814784509482%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato del mono de las nieves — Wikimedia Commons",
+                      "attribution":  "Retrato del mono de las nieves ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "japanese-macaque",
                                    "snow"
@@ -1014,15 +1044,15 @@
                   },
                   {
                       "id":  "monkey-63",
-                      "title":  "Mono araña de Geoffrey",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Ateles_geoffroyi_1.jpg&w=600",
+                      "title":  "Mono ara├▒a de Geoffrey",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Geoffroy%27s_spider_monkey_%28Ateles_geoffroyi_yucatanensis%29_Peten_2.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Ateles_geoffroyi_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/7a/Geoffroy%27s_spider_monkey_%28Ateles_geoffroyi_yucatanensis%29_Peten_2.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono araña de Geoffrey — Wikimedia Commons",
+                      "attribution":  "Mono ara├▒a de Geoffrey ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "spider-monkey",
                                    "new-world-monkey",
@@ -1031,60 +1061,60 @@
                   },
                   {
                       "id":  "monkey-64",
-                      "title":  "Mono araña en una rama",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Spider_monkey_branch.jpg&w=600",
+                      "title":  "Mono ara├▒a en una rama",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/da/Ambigram_tattoo_New_York_Rich_Man.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Spider_monkey_branch.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/da/Ambigram_tattoo_New_York_Rich_Man.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono araña en una rama — Wikimedia Commons",
+                      "attribution":  "Mono ara├▒a en una rama ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "spider-monkey"
                                ]
                   },
                   {
                       "id":  "monkey-65",
-                      "title":  "Mono araña de manos negras",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Black-handed_spider_monkey.jpg&w=600",
+                      "title":  "Mono ara├▒a de manos negras",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Geoffroy%27s_spider_monkey_%28Ateles_geoffroyi_yucatanensis%29_Peten_2.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Black-handed_spider_monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/7a/Geoffroy%27s_spider_monkey_%28Ateles_geoffroyi_yucatanensis%29_Peten_2.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono araña de manos negras — Wikimedia Commons",
+                      "attribution":  "Mono ara├▒a de manos negras ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "spider-monkey"
                                ]
                   },
                   {
                       "id":  "monkey-66",
-                      "title":  "Mono araña de cabeza marrón",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Ateles_chamek_SP_Zoo_3.jpg&w=600",
+                      "title":  "Mono ara├▒a de cabeza marr├│n",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ateles_chamek_SP_Zoo_3.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Ateles_chamek_SP_Zoo_3.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ateles_chamek_SP_Zoo_3.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono araña de cabeza marrón — Wikimedia Commons",
+                      "attribution":  "Mono ara├▒a de cabeza marr├│n ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "spider-monkey"
                                ]
                   },
                   {
                       "id":  "monkey-67",
-                      "title":  "Cría de mono araña",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Spider_monkey_baby.jpg&w=600",
+                      "title":  "Cr├¡a de mono ara├▒a",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/94/Cute_baby_Spider_Monkey_%28EXPLORE%29_%289735277520%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Spider_monkey_baby.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/94/Cute_baby_Spider_Monkey_%28EXPLORE%29_%289735277520%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Cría de mono araña — Wikimedia Commons",
+                      "attribution":  "Cr├¡a de mono ara├▒a ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "spider-monkey",
                                    "baby"
@@ -1093,14 +1123,14 @@
                   {
                       "id":  "monkey-68",
                       "title":  "Mono aullador de manto",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Alouatta_palliata_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/86/Mantled_howler_monkey_and_baby_%2881337%292.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Alouatta_palliata_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/86/Mantled_howler_monkey_and_baby_%2881337%292.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono aullador de manto — Wikimedia Commons",
+                      "attribution":  "Mono aullador de manto ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "howler-monkey",
                                    "new-world-monkey",
@@ -1110,14 +1140,14 @@
                   {
                       "id":  "monkey-69",
                       "title":  "Mono aullador de manto",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mantled_howler_monkey.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/d4/Mantled_howler_monkey.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mantled_howler_monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/d4/Mantled_howler_monkey.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono aullador de manto — Wikimedia Commons",
+                      "attribution":  "Mono aullador de manto ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "howler-monkey"
                                ]
@@ -1125,14 +1155,14 @@
                   {
                       "id":  "monkey-70",
                       "title":  "Retrato de mono aullador",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Howler_monkey_portrait.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Black_Howler_Monkey_Portrait_1.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Howler_monkey_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/a/ae/Black_Howler_Monkey_Portrait_1.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de mono aullador — Wikimedia Commons",
+                      "attribution":  "Retrato de mono aullador ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "howler-monkey"
                                ]
@@ -1140,14 +1170,14 @@
                   {
                       "id":  "monkey-71",
                       "title":  "Mono aullador negro macho",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Alouatta_caraya_male.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/24/Alouatta_caraya_male.JPG",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Alouatta_caraya_male.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/24/Alouatta_caraya_male.JPG"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono aullador negro macho — Wikimedia Commons",
+                      "attribution":  "Mono aullador negro macho ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "howler-monkey",
                                    "south-america"
@@ -1156,29 +1186,29 @@
                   {
                       "id":  "monkey-72",
                       "title":  "Mono aullador dorado",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Golden_howler_monkey.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/86/Mantled_howler_monkey_and_baby_%2881337%292.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Golden_howler_monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/86/Mantled_howler_monkey_and_baby_%2881337%292.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono aullador dorado — Wikimedia Commons",
+                      "attribution":  "Mono aullador dorado ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "howler-monkey"
                                ]
                   },
                   {
                       "id":  "monkey-73",
-                      "title":  "Tití común",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_jacchus_1.jpg&w=600",
+                      "title":  "Tit├¡ com├║n",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/23/Wei%C3%9Fb%C3%BCschelaffe_%28Callithrix_jacchus%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_jacchus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/23/Wei%C3%9Fb%C3%BCschelaffe_%28Callithrix_jacchus%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tití común — Wikimedia Commons",
+                      "attribution":  "Tit├¡ com├║n ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "marmoset",
                                    "new-world-monkey",
@@ -1187,30 +1217,30 @@
                   },
                   {
                       "id":  "monkey-74",
-                      "title":  "Tití de orejas blancas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Common_marmoset.jpg&w=600",
+                      "title":  "Tit├¡ de orejas blancas",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/30/Common_marmoset.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Common_marmoset.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/30/Common_marmoset.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tití de orejas blancas — Wikimedia Commons",
+                      "attribution":  "Tit├¡ de orejas blancas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "marmoset"
                                ]
                   },
                   {
                       "id":  "monkey-75",
-                      "title":  "Retrato de tití",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Marmoset_monkey_portrait.jpg&w=600",
+                      "title":  "Retrato de tit├¡",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/95/Callitrichinae_genus.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Marmoset_monkey_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/95/Callitrichinae_genus.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de tití — Wikimedia Commons",
+                      "attribution":  "Retrato de tit├¡ ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "marmoset"
                                ]
@@ -1218,14 +1248,14 @@
                   {
                       "id":  "monkey-76",
                       "title":  "Calitrix penicillata",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_penicillata_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/9d/Callithrix_penicillata_-_Maroparque_02.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Callithrix_penicillata_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/9d/Callithrix_penicillata_-_Maroparque_02.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Calitrix penicillata — Wikimedia Commons",
+                      "attribution":  "Calitrix penicillata ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "marmoset",
                                    "brazil"
@@ -1233,15 +1263,15 @@
                   },
                   {
                       "id":  "monkey-77",
-                      "title":  "Tití de pincel negro",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Black-pencilled_marmoset.jpg&w=600",
+                      "title":  "Tit├¡ de pincel negro",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/b/b6/Callitrichidae-drawing.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Black-pencilled_marmoset.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/b/b6/Callitrichidae-drawing.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tití de pincel negro — Wikimedia Commons",
+                      "attribution":  "Tit├¡ de pincel negro ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "marmoset"
                                ]
@@ -1249,14 +1279,14 @@
                   {
                       "id":  "monkey-78",
                       "title":  "Tamarin emperador macho",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Emperor_tamarin_male.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/85/Tamarin_portrait_2_edit3.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Emperor_tamarin_male.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/85/Tamarin_portrait_2_edit3.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tamarin emperador macho — Wikimedia Commons",
+                      "attribution":  "Tamarin emperador macho ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin",
                                    "new-world-monkey",
@@ -1266,14 +1296,14 @@
                   {
                       "id":  "monkey-79",
                       "title":  "Tamarin emperador retrato",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saguinus_imperator_portrait.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/06/Saguinus_imperator_%28portrait%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saguinus_imperator_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/06/Saguinus_imperator_%28portrait%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tamarin emperador retrato — Wikimedia Commons",
+                      "attribution":  "Tamarin emperador retrato ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin"
                                ]
@@ -1281,14 +1311,14 @@
                   {
                       "id":  "monkey-80",
                       "title":  "Tamarin emperador en rama",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Emperor_Tamarin_on_branch.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/c/c8/Gure_Arbasoak_-_Primateak_-_Posterra.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Emperor_Tamarin_on_branch.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/c/c8/Gure_Arbasoak_-_Primateak_-_Posterra.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tamarin emperador en rama — Wikimedia Commons",
+                      "attribution":  "Tamarin emperador en rama ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin"
                                ]
@@ -1296,14 +1326,14 @@
                   {
                       "id":  "monkey-81",
                       "title":  "Tamarin de manos doradas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saguinus_midas_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/91/Saguinus_midas_flk24863753.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saguinus_midas_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/91/Saguinus_midas_flk24863753.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tamarin de manos doradas — Wikimedia Commons",
+                      "attribution":  "Tamarin de manos doradas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin",
                                    "south-america"
@@ -1311,15 +1341,15 @@
                   },
                   {
                       "id":  "monkey-82",
-                      "title":  "Tamarin león dorado",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Leontopithecus_rosalia_1.jpg&w=600",
+                      "title":  "Tamarin le├│n dorado",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/1/15/Leontopithecus_rosalia_in_S%C3%A3o_Paulo_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Leontopithecus_rosalia_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/1/15/Leontopithecus_rosalia_in_S%C3%A3o_Paulo_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tamarin león dorado — Wikimedia Commons",
+                      "attribution":  "Tamarin le├│n dorado ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin",
                                    "lion-tamarin",
@@ -1329,15 +1359,15 @@
                   },
                   {
                       "id":  "monkey-83",
-                      "title":  "Retrato de tamarin león dorado",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Golden_lion_tamarin_portrait.jpg&w=600",
+                      "title":  "Retrato de tamarin le├│n dorado",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/44/Golden_lion_tamarin_portrait.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Golden_lion_tamarin_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/44/Golden_lion_tamarin_portrait.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de tamarin león dorado — Wikimedia Commons",
+                      "attribution":  "Retrato de tamarin le├│n dorado ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin",
                                    "lion-tamarin"
@@ -1345,15 +1375,15 @@
                   },
                   {
                       "id":  "monkey-84",
-                      "title":  "Tamarin león dorado joven",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Young_Golden_Lion_Tamarin.jpg&w=600",
+                      "title":  "Tamarin le├│n dorado joven",
+                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Young_Golden_Lion_Tamarin.jpg\u0026w=600",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Young_Golden_Lion_Tamarin.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Young_Golden_Lion_Tamarin.jpg\u0026w=600"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tamarin león dorado joven — Wikimedia Commons",
+                      "attribution":  "Tamarin le├│n dorado joven ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tamarin",
                                    "lion-tamarin",
@@ -1363,14 +1393,14 @@
                   {
                       "id":  "monkey-85",
                       "title":  "Saki de cara blanca macho",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pithecia_pithecia_male.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/6/66/Pithecia_pithecia_-Marwell_Wildlife%2C_Hampshire%2C_England_-male-8a.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pithecia_pithecia_male.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/6/66/Pithecia_pithecia_-Marwell_Wildlife%2C_Hampshire%2C_England_-male-8a.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Saki de cara blanca macho — Wikimedia Commons",
+                      "attribution":  "Saki de cara blanca macho ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "saki",
                                    "new-world-monkey",
@@ -1380,14 +1410,14 @@
                   {
                       "id":  "monkey-86",
                       "title":  "Saki de cara blanca hembra",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pithecia_pithecia_female.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/e/ee/Pithecia_pithecia_-_Karlsruhe_Zoo_02.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pithecia_pithecia_female.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/e/ee/Pithecia_pithecia_-_Karlsruhe_Zoo_02.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Saki de cara blanca hembra — Wikimedia Commons",
+                      "attribution":  "Saki de cara blanca hembra ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "saki"
                                ]
@@ -1395,29 +1425,29 @@
                   {
                       "id":  "monkey-87",
                       "title":  "Saki cabelludo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Shaggy_saki.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/4/48/Male_White_Face_Saki_at_Chester_Zoo_%2815155867794%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Shaggy_saki.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/4/48/Male_White_Face_Saki_at_Chester_Zoo_%2815155867794%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Saki cabelludo — Wikimedia Commons",
+                      "attribution":  "Saki cabelludo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "saki"
                                ]
                   },
                   {
                       "id":  "monkey-88",
-                      "title":  "Uakarí calvo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Cacajao_calvus_1.jpg&w=600",
+                      "title":  "Uakar├¡ calvo",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/e/e8/Cacajao_calvus_Solimoes_river.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Cacajao_calvus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/e/e8/Cacajao_calvus_Solimoes_river.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Uakarí calvo — Wikimedia Commons",
+                      "attribution":  "Uakar├¡ calvo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "uakari",
                                    "new-world-monkey",
@@ -1427,15 +1457,15 @@
                   },
                   {
                       "id":  "monkey-89",
-                      "title":  "Uakarí de cabeza negra",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Black-headed_uakari.jpg&w=600",
+                      "title":  "Uakar├¡ de cabeza negra",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/1/17/Cacajao_melanocephalus.png",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Black-headed_uakari.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/1/17/Cacajao_melanocephalus.png"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Uakarí de cabeza negra — Wikimedia Commons",
+                      "attribution":  "Uakar├¡ de cabeza negra ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "uakari"
                                ]
@@ -1443,14 +1473,14 @@
                   {
                       "id":  "monkey-90",
                       "title":  "Mono ardilla de Bolivia",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_boliviensis_1.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/83/Saimiri_boliviensis_boliviensis_-_Karlsruhe_Zoo_01.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Saimiri_boliviensis_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/83/Saimiri_boliviensis_boliviensis_-_Karlsruhe_Zoo_01.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla de Bolivia — Wikimedia Commons",
+                      "attribution":  "Mono ardilla de Bolivia ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey",
                                    "bolivia"
@@ -1459,29 +1489,29 @@
                   {
                       "id":  "monkey-91",
                       "title":  "Mono ardilla de espalda roja",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Red-backed_squirrel_monkey.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/3f/Central_American_Squirrel_Monkey.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Red-backed_squirrel_monkey.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/3f/Central_American_Squirrel_Monkey.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono ardilla de espalda roja — Wikimedia Commons",
+                      "attribution":  "Mono ardilla de espalda roja ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "squirrel-monkey"
                                ]
                   },
                   {
                       "id":  "monkey-92",
-                      "title":  "Lémur de cola anillada",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Ring-tailed_lemur_Lemur_catta.jpg&w=600",
+                      "title":  "L├®mur de cola anillada",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Ring-tailed_lemur_Lemur_catta.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Lémur de cola anillada — Wikimedia Commons",
+                      "attribution":  "L├®mur de cola anillada ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "lemur",
                                    "prosimian",
@@ -1490,30 +1520,30 @@
                   },
                   {
                       "id":  "monkey-93",
-                      "title":  "Lémur de cola anillada retrato",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Lemur_catta_portrait.jpg&w=600",
+                      "title":  "L├®mur de cola anillada retrato",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/e/ea/Ring_tailed_lemur_portrait.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Lemur_catta_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/e/ea/Ring_tailed_lemur_portrait.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Lémur de cola anillada retrato — Wikimedia Commons",
+                      "attribution":  "L├®mur de cola anillada retrato ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "lemur"
                                ]
                   },
                   {
                       "id":  "monkey-94",
-                      "title":  "Lémur de cola anillada familia",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Ring-tailed_lemur_family.jpg&w=600",
+                      "title":  "L├®mur de cola anillada familia",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/9/90/Katta_Lemur_catta.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Ring-tailed_lemur_family.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/9/90/Katta_Lemur_catta.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Lémur de cola anillada familia — Wikimedia Commons",
+                      "attribution":  "L├®mur de cola anillada familia ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "lemur",
                                    "family"
@@ -1521,30 +1551,30 @@
                   },
                   {
                       "id":  "monkey-95",
-                      "title":  "Lémur de cola anillada saltando",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Jumping_ring-tailed_lemur.jpg&w=600",
+                      "title":  "L├®mur de cola anillada saltando",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ring-Tailed_Lemur_%2827026011960%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Jumping_ring-tailed_lemur.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ring-Tailed_Lemur_%2827026011960%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Lémur de cola anillada saltando — Wikimedia Commons",
+                      "attribution":  "L├®mur de cola anillada saltando ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "lemur"
                                ]
                   },
                   {
                       "id":  "monkey-96",
-                      "title":  "Lémur rufo blanco y negro",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Varecia_variegata_1.jpg&w=600",
+                      "title":  "L├®mur rufo blanco y negro",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hill%27s_ruffed_lemur_%28Varecia_variegata_editorum%29_male_urinating.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Varecia_variegata_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hill%27s_ruffed_lemur_%28Varecia_variegata_editorum%29_male_urinating.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Lémur rufo blanco y negro — Wikimedia Commons",
+                      "attribution":  "L├®mur rufo blanco y negro ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "lemur",
                                    "madagascar"
@@ -1552,15 +1582,15 @@
                   },
                   {
                       "id":  "monkey-97",
-                      "title":  "Lémur rufo rojo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Varecia_rubra_1.jpg&w=600",
+                      "title":  "L├®mur rufo rojo",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/7d/Red_ruffed_lemur_%28Varecia_rubra%29_head.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Varecia_rubra_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/7d/Red_ruffed_lemur_%28Varecia_rubra%29_head.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Lémur rufo rojo — Wikimedia Commons",
+                      "attribution":  "L├®mur rufo rojo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "lemur",
                                    "madagascar"
@@ -1569,14 +1599,14 @@
                   {
                       "id":  "monkey-98",
                       "title":  "Loris perezoso de Bengala",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Bengal_slow_loris.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/3d/Captive_N._bengalensis_from_Laos_with_6-week_baby.JPG",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Bengal_slow_loris.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/3d/Captive_N._bengalensis_from_Laos_with_6-week_baby.JPG"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Loris perezoso de Bengala — Wikimedia Commons",
+                      "attribution":  "Loris perezoso de Bengala ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "loris",
                                    "prosimian",
@@ -1586,14 +1616,14 @@
                   {
                       "id":  "monkey-99",
                       "title":  "Loris perezoso pigmeo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pygmy_slow_loris.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/3/36/Xanthonycticebus_pygmaeus_99592661.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pygmy_slow_loris.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/3/36/Xanthonycticebus_pygmaeus_99592661.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Loris perezoso pigmeo — Wikimedia Commons",
+                      "attribution":  "Loris perezoso pigmeo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "loris",
                                    "asia"
@@ -1601,15 +1631,15 @@
                   },
                   {
                       "id":  "monkey-100",
-                      "title":  "Bushbaby (Gálago)",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Galago_senegalensis.jpg&w=600",
+                      "title":  "Bushbaby (G├ílago)",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/d/d9/Galago_senegalensis.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Galago_senegalensis.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Galago_senegalensis.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Bushbaby (Gálago) — Wikimedia Commons",
+                      "attribution":  "Bushbaby (G├ílago) ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "galago",
                                    "prosimian",
@@ -1619,14 +1649,14 @@
                   {
                       "id":  "monkey-101",
                       "title":  "Tarsio de Filipinas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Philippine_tarsier.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/5/55/Philippine_tarsier.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Philippine_tarsier.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/5/55/Philippine_tarsier.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tarsio de Filipinas — Wikimedia Commons",
+                      "attribution":  "Tarsio de Filipinas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tarsier",
                                    "prosimian",
@@ -1636,29 +1666,29 @@
                   {
                       "id":  "monkey-102",
                       "title":  "Tarsio espectral",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Spectral_tarsier.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/c/ce/Spectral_Tarsier.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Spectral_tarsier.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/c/ce/Spectral_Tarsier.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Tarsio espectral — Wikimedia Commons",
+                      "attribution":  "Tarsio espectral ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "tarsier"
                                ]
                   },
                   {
                       "id":  "monkey-103",
-                      "title":  "Gibón de manos blancas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Hylobates_lar_1.jpg&w=600",
+                      "title":  "Gib├│n de manos blancas",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/03/Hylobates_lar_-_Kaeng_Krachan_WB.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Hylobates_lar_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/03/Hylobates_lar_-_Kaeng_Krachan_WB.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Gibón de manos blancas — Wikimedia Commons",
+                      "attribution":  "Gib├│n de manos blancas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gibbon",
                                    "ape",
@@ -1667,30 +1697,30 @@
                   },
                   {
                       "id":  "monkey-104",
-                      "title":  "Gibón de manos blancas saltando",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=White-handed_gibbon_jumping.jpg&w=600",
+                      "title":  "Gib├│n de manos blancas saltando",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flight_of_the_gibbon_%288361453653%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=White-handed_gibbon_jumping.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flight_of_the_gibbon_%288361453653%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Gibón de manos blancas saltando — Wikimedia Commons",
+                      "attribution":  "Gib├│n de manos blancas saltando ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gibbon"
                                ]
                   },
                   {
                       "id":  "monkey-105",
-                      "title":  "Gibón plateado",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Silvery_gibbon.jpg&w=600",
+                      "title":  "Gib├│n plateado",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/6/60/Silbergibbon_mit_Nachwuchs.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Silvery_gibbon.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/6/60/Silbergibbon_mit_Nachwuchs.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Gibón plateado — Wikimedia Commons",
+                      "attribution":  "Gib├│n plateado ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gibbon"
                                ]
@@ -1698,14 +1728,14 @@
                   {
                       "id":  "monkey-106",
                       "title":  "Siamang cantando",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Siamang_singing.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/a/ad/Siamang_LR_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Siamang_singing.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/a/ad/Siamang_LR_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Siamang cantando — Wikimedia Commons",
+                      "attribution":  "Siamang cantando ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "siamang",
                                    "gibbon"
@@ -1713,15 +1743,15 @@
                   },
                   {
                       "id":  "monkey-107",
-                      "title":  "Orangután de Sumatra",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pongo_abelii_1.jpg&w=600",
+                      "title":  "Orangut├ín de Sumatra",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sumatran_Orangutan_%28Pongo_abelii%29_at_Perth_Zoo%2C_February_2023_13.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pongo_abelii_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sumatran_Orangutan_%28Pongo_abelii%29_at_Perth_Zoo%2C_February_2023_13.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Orangután de Sumatra — Wikimedia Commons",
+                      "attribution":  "Orangut├ín de Sumatra ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "orangutan",
                                    "ape",
@@ -1730,15 +1760,15 @@
                   },
                   {
                       "id":  "monkey-108",
-                      "title":  "Orangután de Borneo",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pongo_pygmaeus_1.jpg&w=600",
+                      "title":  "Orangut├ín de Borneo",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/78/Pongo_pygmaeus_%28orangutang%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pongo_pygmaeus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/78/Pongo_pygmaeus_%28orangutang%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Orangután de Borneo — Wikimedia Commons",
+                      "attribution":  "Orangut├ín de Borneo ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "orangutan",
                                    "ape",
@@ -1747,15 +1777,15 @@
                   },
                   {
                       "id":  "monkey-109",
-                      "title":  "Gorila de montaña",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Mountain_gorilla_1.jpg&w=600",
+                      "title":  "Gorila de monta├▒a",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/78/Mountain_gorilla_%28Gorilla_beringei_beringei%29_yawn.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Mountain_gorilla_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/78/Mountain_gorilla_%28Gorilla_beringei_beringei%29_yawn.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Gorila de montaña — Wikimedia Commons",
+                      "attribution":  "Gorila de monta├▒a ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gorilla",
                                    "ape",
@@ -1765,14 +1795,14 @@
                   {
                       "id":  "monkey-110",
                       "title":  "Gorila de tierras bajas",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Lowland_gorilla.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/1/10/Lowland_gorilla.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Lowland_gorilla.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/1/10/Lowland_gorilla.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Gorila de tierras bajas — Wikimedia Commons",
+                      "attribution":  "Gorila de tierras bajas ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "gorilla",
                                    "ape",
@@ -1781,15 +1811,15 @@
                   },
                   {
                       "id":  "monkey-111",
-                      "title":  "Chimpancé Portrait",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pan_troglodytes_portrait.jpg&w=600",
+                      "title":  "Chimpanc├® Portrait",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/8/85/Pan_troglodytes_-_Karlsruhe_Zoo.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pan_troglodytes_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/8/85/Pan_troglodytes_-_Karlsruhe_Zoo.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Chimpancé Portrait — Wikimedia Commons",
+                      "attribution":  "Chimpanc├® Portrait ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "chimpanzee",
                                    "ape",
@@ -1798,15 +1828,15 @@
                   },
                   {
                       "id":  "monkey-112",
-                      "title":  "Bonobo (Chimpancé pigmeo)",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Pan_paniscus_1.jpg&w=600",
+                      "title":  "Bonobo (Chimpanc├® pigmeo)",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/2/27/Pan_paniscus_%28female%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Pan_paniscus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/2/27/Pan_paniscus_%28female%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Bonobo (Chimpancé pigmeo) — Wikimedia Commons",
+                      "attribution":  "Bonobo (Chimpanc├® pigmeo) ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "bonobo",
                                    "ape",
@@ -1815,15 +1845,15 @@
                   },
                   {
                       "id":  "monkey-113",
-                      "title":  "Mono de probóscide nadando",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Nasalis_larvatus_swimming.jpg&w=600",
+                      "title":  "Mono de prob├│scide nadando",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/03/Oh%3F_Yes%2C_I_can_see_it_coming_%2811112738583%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Nasalis_larvatus_swimming.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/03/Oh%3F_Yes%2C_I_can_see_it_coming_%2811112738583%29.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono de probóscide nadando — Wikimedia Commons",
+                      "attribution":  "Mono de prob├│scide nadando ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "proboscis",
                                    "borneo"
@@ -1832,14 +1862,14 @@
                   {
                       "id":  "monkey-114",
                       "title":  "Mono de nariz chata",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Rhinopithecus_roxellana.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/0/00/Rhinopithecus_roxellana.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Rhinopithecus_roxellana.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/0/00/Rhinopithecus_roxellana.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono de nariz chata — Wikimedia Commons",
+                      "attribution":  "Mono de nariz chata ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "snub-nosed-monkey",
                                    "china"
@@ -1848,29 +1878,29 @@
                   {
                       "id":  "monkey-115",
                       "title":  "Mono de nariz chata azul",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Blue_snub-nosed_monkey.jpg&w=600",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/b/b3/Goldstumpfnasen_%28Rhinopithecus_roxellana%29.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Blue_snub-nosed_monkey.jpg&w=600"
+                                    "https://commons.wikimedia.org/w/thumb.php?f=Blue_snub-nosed_monkey.jpg\u0026w=600"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Mono de nariz chata azul — Wikimedia Commons",
+                      "attribution":  "Mono de nariz chata azul ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "snub-nosed-monkey"
                                ]
                   },
                   {
                       "id":  "monkey-116",
-                      "title":  "Macaco de Berbería",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Macaca_sylvanus_1.jpg&w=600",
+                      "title":  "Macaco de Berber├¡a",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/79/Macaca_sylvanus_feet_and_hands.JPG",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Macaca_sylvanus_1.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/79/Macaca_sylvanus_feet_and_hands.JPG"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macaco de Berbería — Wikimedia Commons",
+                      "attribution":  "Macaco de Berber├¡a ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "barbary-macaque",
                                    "africa",
@@ -1879,15 +1909,15 @@
                   },
                   {
                       "id":  "monkey-117",
-                      "title":  "Macacos de Berbería familia",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Barbary_macaque_family.jpg&w=600",
+                      "title":  "Macacos de Berber├¡a familia",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/7/72/Primate_Hand_Mnemonic.png",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Barbary_macaque_family.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/7/72/Primate_Hand_Mnemonic.png"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Macacos de Berbería familia — Wikimedia Commons",
+                      "attribution":  "Macacos de Berber├¡a familia ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "barbary-macaque",
                                    "family"
@@ -1895,15 +1925,15 @@
                   },
                   {
                       "id":  "monkey-118",
-                      "title":  "Retrato de macaco de Berbería",
-                      "url":  "https://commons.wikimedia.org/w/thumb.php?f=Barbary_macaque_portrait.jpg&w=600",
+                      "title":  "Retrato de macaco de Berber├¡a",
+                      "url":  "https://upload.wikimedia.org/wikipedia/commons/1/1f/Barbary_Macaque_portrait%2C_Zoo%2C_Budapest.jpg",
                       "links":  [
-                                    "https://commons.wikimedia.org/w/thumb.php?f=Barbary_macaque_portrait.jpg&w=600"
+                                    "https://upload.wikimedia.org/wikipedia/commons/1/1f/Barbary_Macaque_portrait%2C_Zoo%2C_Budapest.jpg"
                                 ],
                       "source":  "Wikimedia Commons",
                       "author":  "ver en Wikimedia Commons",
                       "license":  "CC (ver en Wikimedia Commons)",
-                      "attribution":  "Retrato de macaco de Berbería — Wikimedia Commons",
+                      "attribution":  "Retrato de macaco de Berber├¡a ÔÇö Wikimedia Commons",
                       "tags":  [
                                    "barbary-macaque"
                                ]

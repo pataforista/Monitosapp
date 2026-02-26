@@ -332,13 +332,7 @@ function buildUrlCandidates(item) {
   if (original) candidates.push(original);
   if (thumb && thumb !== original) candidates.push(thumb);
 
-  // Fallbacks with Special:FilePath
-  if (fileNameFromUrl) {
-    candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromUrl)}`);
-  }
-  if (fileNameFromTitle) {
-    candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromTitle)}`);
-  }
+  // Avoid Special:FilePath fallback because it redirects cross-origin and may trigger CORB.
 
   return [...new Set(candidates)];
 }
@@ -347,11 +341,22 @@ function extractFileName(imageUrl) {
   if (!imageUrl) return "";
   try {
     const url = new URL(imageUrl);
+    const fileParam = url.searchParams.get("f");
+    if (fileParam) {
+      return decodeURIComponent(fileParam).replace(/^File:/, "").trim();
+    }
+
+    if (url.pathname.includes("/Special:FilePath/")) {
+      const specialPathPart = url.pathname.split("/Special:FilePath/").pop();
+      if (!specialPathPart) return "";
+      return decodeURIComponent(specialPathPart).replace(/^File:/, "").trim();
+    }
+
     const pathPart = url.pathname.split("/").pop();
     if (!pathPart) return "";
     const decoded = decodeURIComponent(pathPart).trim();
     if (!decoded) return "";
-    return decoded.replace(/^\d+\s+/, "");
+    return decoded.replace(/^\d+\s+/, "").replace(/^File:/, "");
   } catch {
     return "";
   }

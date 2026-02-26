@@ -1,70 +1,245 @@
 {
-    "version": 1,
+    "version": 2,
     "items": [
         {
             "id": "monkey-1",
             "title": "Chimpancé curioso",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg/480px-Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg/480px-Pan_troglodytes_troglodytes_in_Cameroon.jpg"
+            ],
             "source": "Wikimedia Commons",
             "author": "Amcaja",
             "license": "CC-BY-SA 3.0",
             "attribution": "Amcaja (CC-BY-SA 3.0) via Wikimedia Commons",
-            "tags": [
-                "chimpanzee",
-                "primate"
-            ]
+            "tags": ["chimpanzee", "primate"]
         },
         {
             "id": "monkey-2",
-            "title": "Maco de Gibraltrar",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Barbary_Ape.jpg",
+            "title": "Macaco de Gibraltar",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Barbary_Ape.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Barbary_Ape.jpg/480px-Barbary_Ape.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Barbary_Ape.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/3/3d/Barbary_Ape.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Barbary_Ape.jpg/480px-Barbary_Ape.jpg"
+            ],
             "source": "Wikimedia Commons",
             "author": "A.S. Whiting",
             "license": "Public Domain",
             "attribution": "A.S. Whiting (Public Domain) via Wikimedia Commons",
-            "tags": [
-                "macaque",
-                "gibraltar"
-            ]
+            "tags": ["macaque", "gibraltar"]
         },
         {
             "id": "monkey-3",
             "title": "Gorila de montaña",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Mountain_Gorilla_Bwindi.jpg",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Gorilla_Bwindi.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mountain_Gorilla_Bwindi.jpg/480px-Mountain_Gorilla_Bwindi.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Gorilla_Bwindi.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/8/87/Mountain_Gorilla_Bwindi.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mountain_Gorilla_Bwindi.jpg/480px-Mountain_Gorilla_Bwindi.jpg"
+            ],
             "source": "Wikimedia Commons",
             "author": "Yathin S Krishnappa",
             "license": "CC BY-SA 3.0",
             "attribution": "Yathin S Krishnappa (CC BY-SA 3.0) via Wikimedia Commons",
-            "tags": [
-                "gorilla",
-                "africa"
-            ]
+            "tags": ["gorilla", "africa"]
         },
         {
             "id": "monkey-4",
             "title": "Babuino chacma",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Chacma_Baboon_Papio_ursinus.jpg",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chacma_Baboon_Papio_ursinus.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chacma_Baboon_Papio_ursinus.jpg/480px-Chacma_Baboon_Papio_ursinus.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Chacma_Baboon_Papio_ursinus.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/e/e0/Chacma_Baboon_Papio_ursinus.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chacma_Baboon_Papio_ursinus.jpg/480px-Chacma_Baboon_Papio_ursinus.jpg"
+            ],
             "source": "Wikimedia Commons",
             "author": "Bernard DUPONT",
             "license": "CC BY-SA 2.0",
             "attribution": "Bernard DUPONT (CC BY-SA 2.0) via Wikimedia Commons",
-            "tags": [
-                "baboon",
-                "wildlife"
-            ]
+            "tags": ["baboon", "wildlife"]
         },
         {
             "id": "monkey-5",
             "title": "Orangután de Sumatra",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg/480px-Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg/480px-Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg"
+            ],
             "source": "Wikimedia Commons",
             "author": "T. R. Shankar Raman",
             "license": "CC BY-SA 4.0",
             "attribution": "T. R. Shankar Raman (CC BY-SA 4.0) via Wikimedia Commons",
-            "tags": [
-                "orangutan",
-                "borneo"
-            ]
+            "tags": ["orangutan", "borneo"]
+        },
+        {
+            "id": "monkey-6",
+            "title": "Macaco japonés en aguas termales",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Macaca_fuscata_fuscata2.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Macaca_fuscata_fuscata2.jpg/480px-Macaca_fuscata_fuscata2.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Macaca_fuscata_fuscata2.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/0/06/Macaca_fuscata_fuscata2.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Macaca_fuscata_fuscata2.jpg/480px-Macaca_fuscata_fuscata2.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Muhammed Mahdi Karim",
+            "license": "CC BY-SA 2.5",
+            "attribution": "Muhammed Mahdi Karim (CC BY-SA 2.5) via Wikimedia Commons",
+            "tags": ["macaque", "japan", "onsen"]
+        },
+        {
+            "id": "monkey-7",
+            "title": "Mandril macho adulto",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandrill_at_Singapore_Zoo.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mandrill_at_Singapore_Zoo.jpg/480px-Mandrill_at_Singapore_Zoo.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Mandrill_at_Singapore_Zoo.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mandrill_at_Singapore_Zoo.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mandrill_at_Singapore_Zoo.jpg/480px-Mandrill_at_Singapore_Zoo.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Manfred Werner",
+            "license": "CC BY-SA 3.0",
+            "attribution": "Manfred Werner (CC BY-SA 3.0) via Wikimedia Commons",
+            "tags": ["mandrill", "primate", "africa"]
+        },
+        {
+            "id": "monkey-8",
+            "title": "Lémur de cola anillada",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lemur_catta_01.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Lemur_catta_01.jpg/480px-Lemur_catta_01.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Lemur_catta_01.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/a/a7/Lemur_catta_01.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Lemur_catta_01.jpg/480px-Lemur_catta_01.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Alex Dunkel",
+            "license": "CC0",
+            "attribution": "Alex Dunkel (CC0) via Wikimedia Commons",
+            "tags": ["lemur", "madagascar", "cc0"]
+        },
+        {
+            "id": "monkey-9",
+            "title": "Gibón de manos blancas",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hylobates_lar_pair_of_white_and_dark_01.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg/480px-Hylobates_lar_pair_of_white_and_dark_01.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Hylobates_lar_pair_of_white_and_dark_01.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hylobates_lar_pair_of_white_and_dark_01.jpg/480px-Hylobates_lar_pair_of_white_and_dark_01.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Frendi Apen Irawan",
+            "license": "CC BY-SA 2.5",
+            "attribution": "Frendi Apen Irawan (CC BY-SA 2.5) via Wikimedia Commons",
+            "tags": ["gibbon", "southeast-asia", "primate"]
+        },
+        {
+            "id": "monkey-10",
+            "title": "Mono probóscide de Borneo",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Proboscis_Monkey_in_Borneo.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Proboscis_Monkey_in_Borneo.jpg/480px-Proboscis_Monkey_in_Borneo.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Proboscis_Monkey_in_Borneo.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/e/e7/Proboscis_Monkey_in_Borneo.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Proboscis_Monkey_in_Borneo.jpg/480px-Proboscis_Monkey_in_Borneo.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Charles J Sharp",
+            "license": "CC BY-SA 4.0",
+            "attribution": "Charles J Sharp (CC BY-SA 4.0) via Wikimedia Commons",
+            "tags": ["proboscis", "borneo", "primate"]
+        },
+        {
+            "id": "monkey-11",
+            "title": "Mono araña de manos negras",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ateles_geoffroyi-edit1.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ateles_geoffroyi-edit1.jpg/480px-Ateles_geoffroyi-edit1.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Ateles_geoffroyi-edit1.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/2/28/Ateles_geoffroyi-edit1.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ateles_geoffroyi-edit1.jpg/480px-Ateles_geoffroyi-edit1.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Hans Hillewaert",
+            "license": "CC BY-SA 2.0",
+            "attribution": "Hans Hillewaert (CC BY-SA 2.0) via Wikimedia Commons",
+            "tags": ["spider-monkey", "central-america", "primate"]
+        },
+        {
+            "id": "monkey-12",
+            "title": "Tití común",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Callithrix_jacchus.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Callithrix_jacchus.jpg/480px-Callithrix_jacchus.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Callithrix_jacchus.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d3/Callithrix_jacchus.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Callithrix_jacchus.jpg/480px-Callithrix_jacchus.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Dario Sanches",
+            "license": "CC BY-SA 2.0",
+            "attribution": "Dario Sanches (CC BY-SA 2.0) via Wikimedia Commons",
+            "tags": ["marmoset", "brazil", "small-primate"]
+        },
+        {
+            "id": "monkey-13",
+            "title": "Colobo guereza",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colobus_guereza_by_Yerlan_Mammadov.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg/480px-Colobus_guereza_by_Yerlan_Mammadov.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Colobus_guereza_by_Yerlan_Mammadov.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Colobus_guereza_by_Yerlan_Mammadov.jpg/480px-Colobus_guereza_by_Yerlan_Mammadov.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Yerlan Mammadov",
+            "license": "CC BY-SA 4.0",
+            "attribution": "Yerlan Mammadov (CC BY-SA 4.0) via Wikimedia Commons",
+            "tags": ["colobus", "africa", "black-white"]
+        },
+        {
+            "id": "monkey-14",
+            "title": "Capuchino de cabeza negra",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sapajus_apella.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sapajus_apella.jpg/480px-Sapajus_apella.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Sapajus_apella.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sapajus_apella.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sapajus_apella.jpg/480px-Sapajus_apella.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Fernando Flores",
+            "license": "CC BY-SA 2.0",
+            "attribution": "Fernando Flores (CC BY-SA 2.0) via Wikimedia Commons",
+            "tags": ["capuchin", "south-america", "primate"]
+        },
+        {
+            "id": "monkey-15",
+            "title": "Siamang",
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Siamang_2.jpg",
+            "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Siamang_2.jpg/480px-Siamang_2.jpg",
+            "links": [
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Siamang_2.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/7/75/Siamang_2.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Siamang_2.jpg/480px-Siamang_2.jpg"
+            ],
+            "source": "Wikimedia Commons",
+            "author": "Grendelkhan",
+            "license": "CC BY-SA 3.0",
+            "attribution": "Grendelkhan (CC BY-SA 3.0) via Wikimedia Commons",
+            "tags": ["siamang", "gibbon", "southeast-asia"]
         }
     ]
 }

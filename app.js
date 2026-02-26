@@ -274,6 +274,15 @@ async function findWorkingImageUrl(item) {
 
 function buildUrlCandidates(item) {
   const candidates = [];
+
+  // 1. Pre-specified links database (highest priority, tried first)
+  if (Array.isArray(item.links)) {
+    for (const link of item.links) {
+      const safe = sanitizeUrl(link);
+      if (safe) candidates.push(safe);
+    }
+  }
+
   const original = sanitizeUrl(item?.url);
   const thumb = sanitizeUrl(item?.thumb);
   const title = item?.title || "";

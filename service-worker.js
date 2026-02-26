@@ -47,11 +47,9 @@ self.addEventListener("fetch", (event) => {
         return;
     }
 
-    // Imágenes remotas (http/https): cache-first en IMG_CACHE
-    const isImage = req.destination === "image" || /\.(png|jpe?g|webp|avif|gif)$/i.test(url.pathname);
-    if (isImage) {
-        event.respondWith(cacheFirst(IMG_CACHE, req));
-    }
+    // No interceptar imágenes remotas: algunos navegadores aplican ORB
+    // y puede bloquear recursos de terceros cuando pasan por el SW.
+    // Dejamos que el navegador resuelva esas solicitudes directamente.
 });
 
 async function cacheFirst(cacheName, request) {
@@ -59,7 +57,7 @@ async function cacheFirst(cacheName, request) {
     const cached = await cache.match(request, { ignoreVary: true });
     if (cached) return cached;
 
-    const res = await fetch(request, { mode: "cors", credentials: "omit" });
+    const res = await fetch(request);
     // Solo cachea respuestas válidas
     if (res && (res.ok || res.type === "opaque")) {
         cache.put(request, res.clone()).catch(() => { });

@@ -1,9 +1,10 @@
-import { searchWikimedia } from "./discovery-service.js";
+import { searchWikimedia, fetchCategoryMonkeys } from "./discovery-service.js";
 
 const VIEW_MAIN = document.getElementById("viewMain");
 const VIEW_DISCOVERY = document.getElementById("viewDiscovery");
 const BTN_TOGGLE_DISCOVERY = document.getElementById("btnToggleDiscovery");
 const BTN_SEARCH = document.getElementById("btnSearch");
+const BTN_DISCOVER_CATEGORY = document.getElementById("btnDiscoverCategory");
 const BTN_BACK = document.getElementById("btnBack");
 const SEARCH_QUERY = document.getElementById("searchQuery");
 const DISCOVERY_RESULTS = document.getElementById("discoveryResults");
@@ -48,6 +49,7 @@ async function init() {
   BTN_TOGGLE_DISCOVERY.addEventListener("click", () => switchView("discovery"));
   BTN_BACK.addEventListener("click", () => switchView("main"));
   BTN_SEARCH.addEventListener("click", () => handleDiscoverySearch());
+  BTN_DISCOVER_CATEGORY.addEventListener("click", () => handleCategoryDiscovery());
   addRetroUiSounds();
   setupInteractionGate();
   SEARCH_QUERY.addEventListener("keypress", (e) => {
@@ -75,6 +77,18 @@ async function handleDiscoverySearch() {
   } catch (err) {
     console.error(err);
     DISCOVERY_RESULTS.innerHTML = '<div class="empty-msg">Error en la búsqueda. Revisa tu conexión.</div>';
+  }
+}
+
+async function handleCategoryDiscovery() {
+  DISCOVERY_RESULTS.innerHTML = '<div class="empty-msg">Explorando Categoría: Monkeys en Wikimedia...</div>';
+
+  try {
+    const results = await fetchCategoryMonkeys("Monkeys");
+    renderDiscoveryResults(results);
+  } catch (err) {
+    console.error(err);
+    DISCOVERY_RESULTS.innerHTML = '<div class="empty-msg">Error explorando la categoría. Revisa tu conexión.</div>';
   }
 }
 

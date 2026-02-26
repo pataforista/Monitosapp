@@ -234,8 +234,6 @@ async function safeRetry(maxTries = 4) {
 
 function renderItem(item, resolvedUrl = "") {
   const displayUrl = resolvedUrl || sanitizeUrl(item.url);
-  IMG_EL.removeAttribute("src");
-  IMG_EL.crossOrigin = "anonymous";
   IMG_EL.src = displayUrl;
   IMG_EL.alt = item.title || "Chango aleatorio";
   TITLE.textContent = item.title || "Sin título";
@@ -280,13 +278,13 @@ function buildUrlCandidates(item) {
   const thumb = sanitizeUrl(item?.thumb);
   const title = item?.title || "";
 
+  if (original) candidates.push(original);
+  if (thumb && thumb !== original) candidates.push(thumb);
+
   const fileNameFromUrl = extractFileName(original || thumb);
   if (fileNameFromUrl) {
     candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromUrl)}`);
   }
-
-  if (thumb && thumb !== original) candidates.push(thumb);
-  if (original) candidates.push(original);
 
   const fileNameFromTitle = title.startsWith("File:") ? title.replace(/^File:/, "") : "";
   if (fileNameFromTitle) {

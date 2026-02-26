@@ -279,6 +279,12 @@ function buildUrlCandidates(item) {
   const title = item?.title || "";
 
   if (original) candidates.push(original);
+
+  // Wikimedia thumbnail URL avoids redirect chains and always returns
+  // a proper image/jpeg, bypassing ORB issues with the full-size URL.
+  const generatedThumb = wikimediaThumbUrl(original || thumb);
+  if (generatedThumb) candidates.push(generatedThumb);
+
   if (thumb && thumb !== original) candidates.push(thumb);
 
   const fileNameFromUrl = extractFileName(original || thumb);
@@ -292,6 +298,25 @@ function buildUrlCandidates(item) {
   }
 
   return [...new Set(candidates)];
+}
+
+/**
+ * Converts a full-resolution Wikimedia Commons upload URL to a 640 px thumbnail URL.
+ * Full URL: https://upload.wikimedia.org/wikipedia/commons/3/3d/Barbary_Ape.jpg
+ * Thumb URL: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Barbary_Ape.jpg/640px-Barbary_Ape.jpg
+ */
+function wikimediaThumbUrl(url, width = 640) {
+  if (!url) return "";
+  try {
+    const u = new URL(url);
+    if (u.hostname !== "upload.wikimedia.org") return "";
+    const m = u.pathname.match(/^(\/wikipedia\/commons\/)([0-9a-f]\/[0-9a-f]{2}\/(.*))$/i);
+    if (!m) return "";
+    const [, base, hashAndFile, filename] = m;
+    return `https://upload.wikimedia.org${base}thumb/${hashAndFile}/${width}px-${filename}`;
+  } catch {
+    return "";
+  }
 }
 
 function extractFileName(imageUrl) {

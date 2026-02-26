@@ -12,6 +12,8 @@ const IMG_EL = document.getElementById("img");
 const LOADING = document.getElementById("loading");
 const TITLE = document.getElementById("imgTitle");
 const SOURCE = document.getElementById("imgSource");
+const IMG_OPEN_LINK = document.getElementById("imgOpenLink");
+const BTN_OPEN_IMAGE = document.getElementById("btnOpenImage");
 const LICENSE = document.getElementById("licenseBox");
 const STATUS = document.getElementById("status");
 
@@ -46,6 +48,7 @@ async function init() {
   BTN_TOGGLE_DISCOVERY.addEventListener("click", () => switchView("discovery"));
   BTN_BACK.addEventListener("click", () => switchView("main"));
   BTN_SEARCH.addEventListener("click", () => handleDiscoverySearch());
+  addRetroUiSounds();
   SEARCH_QUERY.addEventListener("keypress", (e) => {
     if (e.key === "Enter") handleDiscoverySearch();
   });
@@ -196,10 +199,12 @@ async function showRandom() {
     const ok = await preloadImage(item.url);
     if (!ok) throw new Error("Fallo al cargar imagen");
     renderItem(item);
+    playRetroSound("success");
     STATUS.textContent = "Listo.";
     await refreshCacheCount();
   } catch (e) {
     console.warn(e);
+    playRetroSound("error");
     STATUS.textContent = "No se pudo cargar esa imagen. Probando otra…";
     // Intento rápido con otra
     await safeRetry(4);
@@ -217,6 +222,7 @@ async function safeRetry(maxTries = 4) {
       if (!ok) continue;
       currentItem = item;
       renderItem(item);
+      playRetroSound("success");
       STATUS.textContent = "Listo.";
       await refreshCacheCount();
       return;
@@ -230,10 +236,12 @@ function renderItem(item) {
   IMG_EL.alt = item.title || "Chango aleatorio";
   TITLE.textContent = item.title || "Sin título";
   SOURCE.textContent = `${item.source || "Fuente desconocida"} • ${item.author || "Autor desconocido"}`;
-  LICENSE.textContent =
-    `Licencia: ${item.license || "No especificada"}\n` +
-    `Atribución sugerida: ${item.attribution || "—"}\n` +
-    (item.id ? `ID: ${item.id}` : "");
+
+  const safeUrl = sanitizeUrl(item.url);
+  IMG_OPEN_LINK.href = safeUrl || "#";
+  BTN_OPEN_IMAGE.href = safeUrl || "#";
+
+  LICENSE.innerHTML = buildLicenseHtml(item, safeUrl);
 
   updateFavButton();
 }
@@ -250,6 +258,88 @@ function preloadImage(url) {
     img.referrerPolicy = "no-referrer"; // reduce fallos por referer en algunos hosts
     img.src = url;
   });
+}
+
+
+function sanitizeUrl(value) {
+  if (!value) return "";
+  try {
+    const url = new URL(value);
+    if (url.protocol === "http:" || url.protocol === "https:") return url.href;
+    return "";
+  } catch {
+    return "";
+  }
+}
+
+function buildLicenseHtml(item, safeUrl) {
+  const license = item.license || "No especificada";
+  const attribution = item.attribution || "—";
+  const id = item.id ? `ID: ${item.id}` : "";
+  const link = safeUrl
+    ? `Imagen original: <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">abrir enlace</a>`
+    : "Imagen original: enlace no disponible";
+  return [
+    `Licencia: ${license}`,
+    `Atribución sugerida: ${attribution}`,
+    link,
+    id
+  ].filter(Boolean).join("<br>");
+}
+
+let audioCtx;
+
+function addRetroUiSounds() {
+  document.querySelectorAll(".btn, .link-btn").forEach((element) => {
+    element.addEventListener("click", () => playRetroSound("click"));
+  });
+}
+
+function playRetroSound(type = "click") {
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) return;
+
+  if (!audioCtx) {
+    audioCtx = new AudioContextClass();
+  }
+
+  if (audioCtx.state === "suspended") {
+    audioCtx.resume();
+  }
+
+  const now = audioCtx.currentTime;
+
+  if (type === "click") {
+    playTone(now, 880, 0.03, "square", 0.04);
+    playTone(now + 0.03, 660, 0.05, "square", 0.03);
+    return;
+  }
+
+  if (type === "success") {
+    playTone(now, 523.25, 0.06, "triangle", 0.05);
+    playTone(now + 0.06, 659.25, 0.06, "triangle", 0.05);
+    playTone(now + 0.12, 783.99, 0.08, "triangle", 0.06);
+    return;
+  }
+
+  playTone(now, 220, 0.09, "sawtooth", 0.06);
+  playTone(now + 0.08, 155, 0.12, "sawtooth", 0.05);
+}
+
+function playTone(start, frequency, duration, wave, volume) {
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+
+  osc.type = wave;
+  osc.frequency.value = frequency;
+
+  gain.gain.setValueAtTime(volume, start);
+  gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  osc.start(start);
+  osc.stop(start + duration);
 }
 
 function getFavs() {

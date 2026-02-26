@@ -49,6 +49,7 @@ async function init() {
   BTN_BACK.addEventListener("click", () => switchView("main"));
   BTN_SEARCH.addEventListener("click", () => handleDiscoverySearch());
   addRetroUiSounds();
+  setupInteractionGate();
   SEARCH_QUERY.addEventListener("keypress", (e) => {
     if (e.key === "Enter") handleDiscoverySearch();
   });
@@ -196,9 +197,9 @@ async function showRandom() {
 
   // Pre-carga para evitar parpadeo
   try {
-    const ok = await preloadImage(item.url);
-    if (!ok) throw new Error("Fallo al cargar imagen");
-    renderItem(item);
+    const resolvedUrl = await findWorkingImageUrl(item);
+    if (!resolvedUrl) throw new Error("Fallo al cargar imagen");
+    renderItem(item, resolvedUrl);
     playRetroSound("success");
     STATUS.textContent = "Listo.";
     await refreshCacheCount();
@@ -218,10 +219,10 @@ async function safeRetry(maxTries = 4) {
     const item = pickRandom(filteredCatalog());
     if (!item) return;
     try {
-      const ok = await preloadImage(item.url);
-      if (!ok) continue;
+      const resolvedUrl = await findWorkingImageUrl(item);
+      if (!resolvedUrl) continue;
       currentItem = item;
-      renderItem(item);
+      renderItem(item, resolvedUrl);
       playRetroSound("success");
       STATUS.textContent = "Listo.";
       await refreshCacheCount();
@@ -231,13 +232,14 @@ async function safeRetry(maxTries = 4) {
   STATUS.textContent = "Varias URLs fallaron. Revisa CORS/URLs en monkeys.json.";
 }
 
-function renderItem(item) {
-  IMG_EL.src = item.url;
+function renderItem(item, resolvedUrl = "") {
+  const displayUrl = resolvedUrl || sanitizeUrl(item.url);
+  IMG_EL.src = displayUrl;
   IMG_EL.alt = item.title || "Chango aleatorio";
   TITLE.textContent = item.title || "Sin título";
   SOURCE.textContent = `${item.source || "Fuente desconocida"} • ${item.author || "Autor desconocido"}`;
 
-  const safeUrl = sanitizeUrl(item.url);
+  const safeUrl = displayUrl;
   IMG_OPEN_LINK.href = safeUrl || "#";
   BTN_OPEN_IMAGE.href = safeUrl || "#";
 
@@ -258,6 +260,48 @@ function preloadImage(url) {
     img.referrerPolicy = "no-referrer"; // reduce fallos por referer en algunos hosts
     img.src = url;
   });
+}
+
+async function findWorkingImageUrl(item) {
+  const candidates = buildUrlCandidates(item);
+  for (const candidate of candidates) {
+    const ok = await preloadImage(candidate);
+    if (ok) return candidate;
+  }
+  return "";
+}
+
+function buildUrlCandidates(item) {
+  const candidates = [];
+  const original = sanitizeUrl(item?.url);
+  const thumb = sanitizeUrl(item?.thumb);
+  const title = item?.title || "";
+
+  if (original) candidates.push(original);
+  if (thumb && thumb !== original) candidates.push(thumb);
+
+  const fileNameFromUrl = extractFileName(original || thumb);
+  if (fileNameFromUrl) {
+    candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromUrl)}`);
+  }
+
+  const fileNameFromTitle = title.startsWith("File:") ? title.replace(/^File:/, "") : "";
+  if (fileNameFromTitle) {
+    candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromTitle)}`);
+  }
+
+  return [...new Set(candidates)];
+}
+
+function extractFileName(imageUrl) {
+  if (!imageUrl) return "";
+  try {
+    const url = new URL(imageUrl);
+    const pathPart = url.pathname.split("/").pop();
+    return pathPart ? decodeURIComponent(pathPart) : "";
+  } catch {
+    return "";
+  }
 }
 
 
@@ -288,6 +332,19 @@ function buildLicenseHtml(item, safeUrl) {
 }
 
 let audioCtx;
+let userInteracted = false;
+
+
+function setupInteractionGate() {
+  const markInteraction = () => {
+    userInteracted = true;
+    window.removeEventListener("pointerdown", markInteraction);
+    window.removeEventListener("keydown", markInteraction);
+  };
+
+  window.addEventListener("pointerdown", markInteraction, { once: true });
+  window.addEventListener("keydown", markInteraction, { once: true });
+}
 
 function addRetroUiSounds() {
   document.querySelectorAll(".btn, .link-btn").forEach((element) => {
@@ -296,6 +353,8 @@ function addRetroUiSounds() {
 }
 
 function playRetroSound(type = "click") {
+  if (!userInteracted) return;
+
   const AudioContextClass = window.AudioContext || window.webkitAudioContext;
   if (!AudioContextClass) return;
 

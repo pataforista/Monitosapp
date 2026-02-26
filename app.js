@@ -289,30 +289,53 @@ async function findWorkingImageUrl(item) {
   return "";
 }
 
+function getSafeMonkeyUrl(fileName, width = 600) {
+  if (!fileName) return "";
+  // Limpia el nombre por si trae "File:"
+  const cleanName = fileName.replace(/^File:/, "").replace(/ /g, "_");
+  return `https://commons.wikimedia.org/w/thumb.php?f=${encodeURIComponent(cleanName)}&w=${width}`;
+}
+
 function buildUrlCandidates(item) {
   const candidates = [];
-
-  // 1. Pre-specified links database (highest priority, tried first)
-  if (Array.isArray(item.links)) {
-    for (const link of item.links) {
-      const safe = sanitizeUrl(link);
-      if (safe) candidates.push(safe);
-    }
-  }
 
   const original = sanitizeUrl(item?.url);
   const thumb = sanitizeUrl(item?.thumb);
   const title = item?.title || "";
 
-  if (original) candidates.push(original);
-  if (thumb && thumb !== original) candidates.push(thumb);
+  // 1. Try to build a thumb.php URL from title or urls (highest reliability)
+  const fileNameFromTitle = title.startsWith("File:") ? title.replace(/^File:/, "") : "";
+  if (fileNameFromTitle) {
+    candidates.push(getSafeMonkeyUrl(fileNameFromTitle, 600));
+  }
 
   const fileNameFromUrl = extractFileName(original || thumb);
   if (fileNameFromUrl) {
-    candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromUrl)}`);
+    candidates.push(getSafeMonkeyUrl(fileNameFromUrl, 600));
   }
 
-  const fileNameFromTitle = title.startsWith("File:") ? title.replace(/^File:/, "") : "";
+  // 2. Pre-specified links database
+  if (Array.isArray(item.links)) {
+    for (const link of item.links) {
+      const safe = sanitizeUrl(link);
+      if (safe) {
+        // If it's a wikimedia link, we can try to "heal" it into thumb.php too
+        const fn = extractFileName(safe);
+        if (fn && safe.includes("wikimedia.org")) {
+          candidates.push(getSafeMonkeyUrl(fn, 600));
+        }
+        candidates.push(safe);
+      }
+    }
+  }
+
+  if (original) candidates.push(original);
+  if (thumb && thumb !== original) candidates.push(thumb);
+
+  // Fallbacks with Special:FilePath
+  if (fileNameFromUrl) {
+    candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromUrl)}`);
+  }
   if (fileNameFromTitle) {
     candidates.push(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileNameFromTitle)}`);
   }

@@ -3,6 +3,13 @@
  * Filters for CC0 and Public Domain images.
  */
 
+function getSafeMonkeyUrl(fileName, width = 600) {
+    if (!fileName) return "";
+    // Limpia el nombre por si trae "File:"
+    const cleanName = fileName.replace(/^File:/, "").replace(/ /g, "_");
+    return `https://commons.wikimedia.org/w/thumb.php?f=${encodeURIComponent(cleanName)}&w=${width}`;
+}
+
 export async function searchWikimedia(query) {
     const endpoint = "https://commons.wikimedia.org/w/api.php";
 
@@ -40,15 +47,16 @@ export async function searchWikimedia(query) {
         const isLegal = /CC0|Public Domain|PD/i.test(license);
 
         if (isLegal) {
+            const fileName = page.title.replace("File:", "");
             results.push({
                 id: `wm-${page.pageid}`,
-                title: metadata.ObjectName ? metadata.ObjectName.value : page.title.replace("File:", ""),
-                url: info.url,
+                title: metadata.ObjectName ? metadata.ObjectName.value : fileName,
+                url: getSafeMonkeyUrl(fileName),
                 source: "Wikimedia Commons",
                 author: metadata.Artist ? metadata.Artist.value.replace(/<[^>]*>/g, "") : "Unknown",
                 license: license,
                 attribution: metadata.License ? metadata.License.value : license,
-                thumb: info.url // In a real app, we'd use a thumb URL
+                thumb: getSafeMonkeyUrl(fileName, 480)
             });
         }
     }
@@ -107,15 +115,16 @@ export async function fetchCategoryMonkeys(categoryName = "Monkeys") {
         const metadata = info.extmetadata;
         const license = metadata.LicenseShortName ? metadata.LicenseShortName.value : "Unknown";
 
+        const fileName = page.title.replace("File:", "");
         results.push({
             id: `wm-cat-${page.pageid}`,
-            title: metadata.ObjectName ? metadata.ObjectName.value : page.title.replace("File:", ""),
-            url: info.url,
+            title: metadata.ObjectName ? metadata.ObjectName.value : fileName,
+            url: getSafeMonkeyUrl(fileName),
             source: "Wikimedia Commons (Categoría: " + categoryName + ")",
             author: metadata.Artist ? metadata.Artist.value.replace(/<[^>]*>/g, "") : "Unknown",
             license: license,
             attribution: metadata.License ? metadata.License.value : license,
-            thumb: info.url
+            thumb: getSafeMonkeyUrl(fileName, 480)
         });
     }
 

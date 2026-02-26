@@ -1,0 +1,70 @@
+{
+    "version": 1,
+    "items": [
+        {
+            "id": "monkey-1",
+            "title": "Chimpancé curioso",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pan_troglodytes_troglodytes_in_Cameroon.jpg",
+            "source": "Wikimedia Commons",
+            "author": "Amcaja",
+            "license": "CC-BY-SA 3.0",
+            "attribution": "Amcaja (CC-BY-SA 3.0) via Wikimedia Commons",
+            "tags": [
+                "chimpanzee",
+                "primate"
+            ]
+        },
+        {
+            "id": "monkey-2",
+            "title": "Maco de Gibraltrar",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Barbary_Ape.jpg",
+            "source": "Wikimedia Commons",
+            "author": "A.S. Whiting",
+            "license": "Public Domain",
+            "attribution": "A.S. Whiting (Public Domain) via Wikimedia Commons",
+            "tags": [
+                "macaque",
+                "gibraltar"
+            ]
+        },
+        {
+            "id": "monkey-3",
+            "title": "Gorila de montaña",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Mountain_Gorilla_Bwindi.jpg",
+            "source": "Wikimedia Commons",
+            "author": "Yathin S Krishnappa",
+            "license": "CC BY-SA 3.0",
+            "attribution": "Yathin S Krishnappa (CC BY-SA 3.0) via Wikimedia Commons",
+            "tags": [
+                "gorilla",
+                "africa"
+            ]
+        },
+        {
+            "id": "monkey-4",
+            "title": "Babuino chacma",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Chacma_Baboon_Papio_ursinus.jpg",
+            "source": "Wikimedia Commons",
+            "author": "Bernard DUPONT",
+            "license": "CC BY-SA 2.0",
+            "attribution": "Bernard DUPONT (CC BY-SA 2.0) via Wikimedia Commons",
+            "tags": [
+                "baboon",
+                "wildlife"
+            ]
+        },
+        {
+            "id": "monkey-5",
+            "title": "Orangután de Sumatra",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Orang_Utan%2C_Semenggoh_Wildlife_Centre%2C_Sarawak%2C_Borneo%2C_Malaysia.jpg",
+            "source": "Wikimedia Commons",
+            "author": "T. R. Shankar Raman",
+            "license": "CC BY-SA 4.0",
+            "attribution": "T. R. Shankar Raman (CC BY-SA 4.0) via Wikimedia Commons",
+            "tags": [
+                "orangutan",
+                "borneo"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Changos Aleatorios</title>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="row">
+        <h1>Changos aleatorios</h1>
+        <button id="btnToggleDiscovery" class="btn small">🔍 Descubrir</button>
+      </div>
+      <div class="row">
+        <label class="toggle">
+          <input id="onlyCC0" type="checkbox" checked />
+          <span>Solo CC0 / Dominio público</span>
+        </label>
+        <span class="pill" id="cacheCount">Cache: 0</span>
+      </div>
+    </header>
+
+    <!-- Main View -->
+    <section id="viewMain" class="card">
+      <div class="frame">
+        <img id="img" alt="Chango aleatorio" />
+        <div class="loading" id="loading" hidden>Cargando…</div>
+      </div>
+
+      <div class="meta">
+        <div class="meta-left">
+          <div class="title" id="imgTitle">—</div>
+          <div class="sub" id="imgSource">—</div>
+        </div>
+        <div class="meta-right">
+          <button id="btnNext" class="btn primary">Otro chango</button>
+          <button id="btnFav" class="btn">★ Favorito</button>
+        </div>
+      </div>
+
+      <details class="details">
+        <summary>Licencia / atribución</summary>
+        <div id="licenseBox" class="license">—</div>
+      </details>
+
+      <div class="hint">
+        Tip: instala la PWA y úsala offline. Las imágenes vistas se van guardando en caché.
+      </div>
+    </section>
+
+    <!-- Discovery View (Hidden by default) -->
+    <section id="viewDiscovery" class="card" hidden>
+      <div class="discovery-head">
+        <h2>Buscador Legal (Wikimedia)</h2>
+        <div class="row">
+          <input type="text" id="searchQuery" placeholder="Ej: monkey, ape, chimpanzee..." class="input" />
+          <button id="btnSearch" class="btn primary">Buscar</button>
+        </div>
+      </div>
+      <div id="discoveryResults" class="results-grid">
+        <!-- Results will appear here -->
+        <div class="empty-msg">Busca imágenes CC0 para tu catálogo.</div>
+      </div>
+      <div class="discovery-foot">
+        <button id="btnBack" class="btn">Volver al catálogo</button>
+      </div>
+    </section>
+
+
+    <footer class="foot">
+      <button id="btnClear" class="btn danger">Borrar caché de imágenes</button>
+      <span class="small" id="status">Listo.</span>
+    </footer>
+  </main>
+
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>

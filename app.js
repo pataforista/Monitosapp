@@ -258,6 +258,7 @@ function preloadImage(url) {
     img.onload = () => resolve(true);
     img.onerror = () => resolve(false);
     img.referrerPolicy = "no-referrer"; // reduce fallos por referer en algunos hosts
+    img.crossOrigin = "anonymous";
     img.src = url;
   });
 }

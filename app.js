@@ -257,8 +257,6 @@ function preloadImage(url) {
     const img = new Image();
     img.onload = () => resolve(true);
     img.onerror = () => resolve(false);
-    img.referrerPolicy = "no-referrer"; // reduce fallos por referer en algunos hosts
-    img.crossOrigin = "anonymous";
     img.src = url;
   });
 }
@@ -299,7 +297,10 @@ function extractFileName(imageUrl) {
   try {
     const url = new URL(imageUrl);
     const pathPart = url.pathname.split("/").pop();
-    return pathPart ? decodeURIComponent(pathPart) : "";
+    if (!pathPart) return "";
+    const decoded = decodeURIComponent(pathPart).trim();
+    if (!decoded) return "";
+    return decoded.replace(/^\d+\s+/, "");
   } catch {
     return "";
   }

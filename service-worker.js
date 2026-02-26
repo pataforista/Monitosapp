@@ -1,4 +1,4 @@
-const APP_CACHE = "app-shell-v1";
+const APP_CACHE = "app-shell-v2";
 const IMG_CACHE = "monkey-images-v1";
 
 const APP_ASSETS = [

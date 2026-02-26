@@ -352,8 +352,16 @@ function extractFileName(imageUrl) {
       return decodeURIComponent(specialPathPart).replace(/^File:/, "").trim();
     }
 
-    const pathPart = url.pathname.split("/").pop();
+    let pathPart = url.pathname.split("/").pop();
     if (!pathPart) return "";
+
+    // If it's a thumbnail path like /thumb/.../File.jpg/480px-File.jpg
+    // the actual filename is the second to last part.
+    if (url.pathname.includes("/thumb/") && pathPart.match(/^\d+px-/)) {
+      const parts = url.pathname.split("/");
+      pathPart = parts[parts.length - 2];
+    }
+
     const decoded = decodeURIComponent(pathPart).trim();
     if (!decoded) return "";
     return decoded.replace(/^\d+\s+/, "").replace(/^File:/, "");

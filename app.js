@@ -212,13 +212,18 @@ async function showRandom() {
   // Pre-carga para evitar parpadeo
   try {
     const resolvedUrl = await findWorkingImageUrl(item);
-    if (!resolvedUrl) throw new Error("Fallo al cargar imagen");
+    if (!resolvedUrl) {
+      playRetroSound("error");
+      STATUS.textContent = "No se pudo cargar esa imagen. Probando otra…";
+      await safeRetry(4);
+      return;
+    }
     renderItem(item, resolvedUrl);
     playRetroSound("success");
     STATUS.textContent = "Listo.";
     await refreshCacheCount();
   } catch (e) {
-    console.warn(e);
+    console.warn("Error cargando imagen", e);
     playRetroSound("error");
     STATUS.textContent = "No se pudo cargar esa imagen. Probando otra…";
     // Intento rápido con otra

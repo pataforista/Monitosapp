@@ -206,10 +206,8 @@ async function showRandom() {
   }
 
   currentItem = item;
-  setLoading(true);
   STATUS.textContent = "Cargando imagen…";
 
-  // Pre-carga para evitar parpadeo
   try {
     const resolvedUrl = await findWorkingImageUrl(item);
     if (!resolvedUrl) {
@@ -226,10 +224,8 @@ async function showRandom() {
     console.warn("Error cargando imagen", e);
     playRetroSound("error");
     STATUS.textContent = "No se pudo cargar esa imagen. Probando otra…";
-    // Intento rápido con otra
-    await safeRetry(4);
-  } finally {
     setLoading(false);
+    await safeRetry(4);
   }
 }
 
@@ -253,7 +249,6 @@ async function safeRetry(maxTries = 4) {
 
 function renderItem(item, resolvedUrl = "") {
   const displayUrl = resolvedUrl || sanitizeUrl(item.url);
-  IMG_EL.src = displayUrl;
   IMG_EL.alt = item.title || "Chango aleatorio";
   TITLE.textContent = item.title || "Sin título";
   SOURCE.textContent = `${item.source || "Fuente desconocida"} • ${item.author || "Autor desconocido"}`;
@@ -263,8 +258,13 @@ function renderItem(item, resolvedUrl = "") {
   BTN_OPEN_IMAGE.href = safeUrl || "#";
 
   LICENSE.innerHTML = buildLicenseHtml(item, safeUrl);
-
   updateFavButton();
+
+  // Bind loading state to the actual <img> element's events
+  setLoading(true);
+  IMG_EL.onload = () => setLoading(false);
+  IMG_EL.onerror = () => setLoading(false);
+  IMG_EL.src = displayUrl;
 }
 
 function setLoading(isLoading) {

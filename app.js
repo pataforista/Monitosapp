@@ -248,7 +248,6 @@ async function safeRetry(maxTries = 4) {
 
 function renderItem(item, resolvedUrl = "") {
   const displayUrl = resolvedUrl || sanitizeUrl(item.url);
-  IMG_EL.crossOrigin = "anonymous";
   IMG_EL.src = displayUrl;
   IMG_EL.alt = item.title || "Chango aleatorio";
   TITLE.textContent = item.title || "Sin título";
@@ -270,7 +269,6 @@ function setLoading(isLoading) {
 function preloadImage(url) {
   return new Promise((resolve) => {
     const img = new Image();
-    img.crossOrigin = "anonymous";
     img.onload = () => resolve(true);
     img.onerror = () => resolve(false);
     img.src = url;

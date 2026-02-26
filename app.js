@@ -196,55 +196,88 @@ function filteredCatalog() {
   });
 }
 
-async function showRandom() {
-  const list = filteredCatalog();
-  const item = pickRandom(list);
+/** Fetch a random monkey image live from Wikimedia API. */
+async function fetchRandomFromWikimedia() {
+  const searchTerms = ["monkey", "ape", "primate", "chimpanzee", "gorilla", "orangutan", "macaque", "baboon", "gibbon", "tamarin", "marmoset", "capuchin", "lemur"];
+  const term = searchTerms[Math.floor(Math.random() * searchTerms.length)];
+  const params = new URLSearchParams({
+    action: "query",
+    format: "json",
+    generator: "search",
+    gsrsearch: `filetype:bitmap ${term}`,
+    gsrnamespace: "6",
+    gsrlimit: "20",
+    prop: "imageinfo",
+    iiprop: "url|extmetadata",
+    iiurlwidth: "800",
+    origin: "*"
+  });
 
-  if (!item) {
-    STATUS.textContent = "No hay imágenes que cumplan el filtro. Revisa licencias en monkeys.json.";
-    return;
-  }
+  const resp = await fetch(`https://commons.wikimedia.org/w/api.php?${params.toString()}`);
+  const data = await resp.json();
+  if (!data.query || !data.query.pages) return null;
 
-  currentItem = item;
-  STATUS.textContent = "Cargando imagen…";
+  const pages = Object.values(data.query.pages);
+  const filtered = pages.filter(p => p.imageinfo && p.imageinfo[0].thumburl);
+  if (!filtered.length) return null;
 
-  try {
-    const resolvedUrl = await findWorkingImageUrl(item);
-    if (!resolvedUrl) {
-      playRetroSound("error");
-      STATUS.textContent = "No se pudo cargar esa imagen. Probando otra…";
-      await safeRetry(4);
-      return;
-    }
-    renderItem(item, resolvedUrl);
-    playRetroSound("success");
-    STATUS.textContent = "Listo.";
-    await refreshCacheCount();
-  } catch (e) {
-    console.warn("Error cargando imagen", e);
-    playRetroSound("error");
-    STATUS.textContent = "No se pudo cargar esa imagen. Probando otra…";
-    setLoading(false);
-    await safeRetry(4);
-  }
+  // Apply CC0/PD filter if active
+  const usePdOnly = ONLY_CC0.checked;
+  const onlyPd = usePdOnly ? filtered.filter(p => {
+    const lic = (p.imageinfo[0].extmetadata?.LicenseShortName?.value || "").toLowerCase();
+    return lic.includes("cc0") || lic.includes("public domain") || lic === "pd";
+  }) : filtered;
+  const pool = onlyPd.length ? onlyPd : filtered;
+
+  const page = pool[Math.floor(Math.random() * pool.length)];
+  const info = page.imageinfo[0];
+  const meta = info.extmetadata || {};
+  return {
+    id: `wm-live-${page.pageid}`,
+    title: meta.ObjectName?.value || page.title.replace("File:", ""),
+    url: info.thumburl,    // ← stable upload.wikimedia.org thumbnail, CORS-safe
+    source: "Wikimedia Commons",
+    author: (meta.Artist?.value || "Unknown").replace(/<[^>]*>/g, ""),
+    license: meta.LicenseShortName?.value || "—",
+    attribution: meta.License?.value || meta.LicenseShortName?.value || "—"
+  };
 }
 
-async function safeRetry(maxTries = 4) {
-  for (let i = 0; i < maxTries; i++) {
-    const item = pickRandom(filteredCatalog());
-    if (!item) return;
-    try {
-      const resolvedUrl = await findWorkingImageUrl(item);
-      if (!resolvedUrl) continue;
-      currentItem = item;
-      renderItem(item, resolvedUrl);
+async function showRandom() {
+  STATUS.textContent = "Cargando imagen…";
+  setLoading(true);
+
+  try {
+    // 1. Try live Wikimedia API first (always fresh, always correct CORS)
+    const liveItem = await fetchRandomFromWikimedia();
+    if (liveItem) {
+      currentItem = liveItem;
+      renderItem(liveItem, liveItem.url);
       playRetroSound("success");
       STATUS.textContent = "Listo.";
       await refreshCacheCount();
       return;
-    } catch { }
+    }
+
+    // 2. Fallback: static catalog (for saved favorites/custom items)
+    const list = filteredCatalog();
+    const item = pickRandom(list);
+    if (!item) {
+      STATUS.textContent = "Sin imágenes disponibles.";
+      setLoading(false);
+      return;
+    }
+    currentItem = item;
+    renderItem(item, item.url);
+    playRetroSound("success");
+    STATUS.textContent = "Listo (catálogo local).";
+    await refreshCacheCount();
+  } catch (e) {
+    console.warn("Error cargando imagen", e);
+    playRetroSound("error");
+    STATUS.textContent = "Error de conexión. Intenta de nuevo.";
+    setLoading(false);
   }
-  STATUS.textContent = "Varias URLs fallaron. Revisa CORS/URLs en monkeys.json.";
 }
 
 function renderItem(item, resolvedUrl = "") {

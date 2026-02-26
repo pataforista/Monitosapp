@@ -59,7 +59,7 @@ async function cacheFirst(cacheName, request) {
     const cached = await cache.match(request, { ignoreVary: true });
     if (cached) return cached;
 
-    const res = await fetch(request, { mode: "cors", credentials: "omit" });
+    const res = await fetch(request);
     // Solo cachea respuestas válidas
     if (res && (res.ok || res.type === "opaque")) {
         cache.put(request, res.clone()).catch(() => { });

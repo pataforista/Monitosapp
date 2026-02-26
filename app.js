@@ -49,6 +49,7 @@ async function init() {
   BTN_BACK.addEventListener("click", () => switchView("main"));
   BTN_SEARCH.addEventListener("click", () => handleDiscoverySearch());
   addRetroUiSounds();
+  setupInteractionGate();
   SEARCH_QUERY.addEventListener("keypress", (e) => {
     if (e.key === "Enter") handleDiscoverySearch();
   });
@@ -331,6 +332,19 @@ function buildLicenseHtml(item, safeUrl) {
 }
 
 let audioCtx;
+let userInteracted = false;
+
+
+function setupInteractionGate() {
+  const markInteraction = () => {
+    userInteracted = true;
+    window.removeEventListener("pointerdown", markInteraction);
+    window.removeEventListener("keydown", markInteraction);
+  };
+
+  window.addEventListener("pointerdown", markInteraction, { once: true });
+  window.addEventListener("keydown", markInteraction, { once: true });
+}
 
 function addRetroUiSounds() {
   document.querySelectorAll(".btn, .link-btn").forEach((element) => {
@@ -339,6 +353,8 @@ function addRetroUiSounds() {
 }
 
 function playRetroSound(type = "click") {
+  if (!userInteracted) return;
+
   const AudioContextClass = window.AudioContext || window.webkitAudioContext;
   if (!AudioContextClass) return;
 

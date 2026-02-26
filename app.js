@@ -303,36 +303,30 @@ function buildUrlCandidates(item) {
   const thumb = sanitizeUrl(item?.thumb);
   const title = item?.title || "";
 
-  // 1. Try to build a thumb.php URL from title or urls (highest reliability)
+  // 1. Prioritize the explicitly provided 'original' and 'thumb' from monkeys.json
+  // since they are now standardized canonical thumb.php URLs.
+  if (original) candidates.push(original);
+  if (thumb && thumb !== original) candidates.push(thumb);
+
+  // 2. Add candidates from 'links' array
+  if (Array.isArray(item.links)) {
+    for (const link of item.links) {
+      const safe = sanitizeUrl(link);
+      if (safe) candidates.push(safe);
+    }
+  }
+
+  // 3. Heuristic fallbacks: Try to build a clean thumb.php URL if name is found elsewhere
   const fileNameFromTitle = title.startsWith("File:") ? title.replace(/^File:/, "") : "";
   if (fileNameFromTitle) {
     candidates.push(getSafeMonkeyUrl(fileNameFromTitle, 600));
   }
 
   const fileNameFromUrl = extractFileName(original || thumb);
-  if (fileNameFromUrl) {
+  if (fileNameFromUrl && !original.includes(fileNameFromUrl)) {
+    // Only if it's potentially different from what we already have
     candidates.push(getSafeMonkeyUrl(fileNameFromUrl, 600));
   }
-
-  // 2. Pre-specified links database
-  if (Array.isArray(item.links)) {
-    for (const link of item.links) {
-      const safe = sanitizeUrl(link);
-      if (safe) {
-        // If it's a wikimedia link, we can try to "heal" it into thumb.php too
-        const fn = extractFileName(safe);
-        if (fn && safe.includes("wikimedia.org")) {
-          candidates.push(getSafeMonkeyUrl(fn, 600));
-        }
-        candidates.push(safe);
-      }
-    }
-  }
-
-  if (original) candidates.push(original);
-  if (thumb && thumb !== original) candidates.push(thumb);
-
-  // Avoid Special:FilePath fallback because it redirects cross-origin and may trigger CORB.
 
   return [...new Set(candidates)];
 }

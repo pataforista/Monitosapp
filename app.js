@@ -23,6 +23,10 @@ const BTN_FAV = document.getElementById("btnFav");
 const BTN_CLEAR = document.getElementById("btnClear");
 const ONLY_CC0 = document.getElementById("onlyCC0");
 const CACHE_COUNT = document.getElementById("cacheCount");
+const APP_TITLE = document.getElementById("appTitle");
+const ANIMAL_BTNS = document.querySelectorAll(".animal-btn");
+
+let currentAnimal = "monkey";
 
 const FAV_KEY = "monkey_favs_v1";
 const CATALOG_ADD_KEY = "monkey_extra_catalog_v1";
@@ -46,6 +50,16 @@ async function init() {
   BTN_CLEAR.addEventListener("click", () => clearImageCache());
   ONLY_CC0.addEventListener("change", () => showRandom());
 
+  ANIMAL_BTNS.forEach(btn => {
+    btn.addEventListener("click", () => {
+      currentAnimal = btn.dataset.animal;
+      ANIMAL_BTNS.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      updateAnimalUI();
+      showRandom();
+    });
+  });
+
   BTN_TOGGLE_DISCOVERY.addEventListener("click", () => switchView("discovery"));
   BTN_BACK.addEventListener("click", () => switchView("main"));
   BTN_SEARCH.addEventListener("click", () => handleDiscoverySearch());
@@ -55,6 +69,9 @@ async function init() {
   SEARCH_QUERY.addEventListener("keypress", (e) => {
     if (e.key === "Enter") handleDiscoverySearch();
   });
+
+  // Apply initial UI labels
+  updateAnimalUI();
 
   // primera carga
   await showRandom();
@@ -81,10 +98,11 @@ async function handleDiscoverySearch() {
 }
 
 async function handleCategoryDiscovery() {
-  DISCOVERY_RESULTS.innerHTML = '<div class="empty-msg">Explorando Categoría: Monkeys en Wikimedia...</div>';
+  const { category } = getAnimalMeta();
+  DISCOVERY_RESULTS.innerHTML = `<div class="empty-msg">Explorando Categoría: ${category} en Wikimedia...</div>`;
 
   try {
-    const results = await fetchCategoryMonkeys("Monkeys");
+    const results = await fetchCategoryMonkeys(category);
     renderDiscoveryResults(results);
   } catch (err) {
     console.error(err);
@@ -186,20 +204,64 @@ function pickRandom(list) {
   return list[idx];
 }
 
-function filteredCatalog() {
-  if (!ONLY_CC0.checked) return catalog;
+function getAnimalMeta() {
+  if (currentAnimal === "cat") return {
+    terms: ["cat", "kitten", "tabby cat", "domestic cat", "Felis catus", "persian cat", "siamese cat", "feline", "tomcat"],
+    category: "Domestic_cats",
+    title: "Gatos aleatorios",
+    next: "Otro gato 🐱"
+  };
+  if (currentAnimal === "dog") return {
+    terms: ["dog", "puppy", "domestic dog", "Canis lupus familiaris", "golden retriever", "labrador", "beagle", "poodle", "dachshund"],
+    category: "Dogs",
+    title: "Perros aleatorios",
+    next: "Otro perro 🐶"
+  };
+  if (currentAnimal === "all") return {
+    terms: ["monkey", "ape", "chimpanzee", "cat", "kitten", "dog", "puppy", "gorilla", "tabby", "macaque"],
+    category: "Animals",
+    title: "Animales aleatorios",
+    next: "Otro animal"
+  };
+  // default: monkey
+  return {
+    terms: ["monkey", "ape", "primate", "chimpanzee", "gorilla", "orangutan", "macaque", "baboon", "gibbon", "tamarin", "marmoset", "capuchin", "lemur"],
+    category: "Monkeys",
+    title: "Changos aleatorios",
+    next: "Otro chango 🐒"
+  };
+}
 
-  // Solo CC0 / PD
-  return catalog.filter(it => {
+function updateAnimalUI() {
+  const { title, next, category } = getAnimalMeta();
+  APP_TITLE.textContent = title;
+  BTN_NEXT.textContent = next;
+  BTN_DISCOVER_CATEGORY.textContent = `Descubrir: ${category}`;
+}
+
+function filteredCatalog() {
+  // Filter by animal type using title/tags keywords
+  const { terms } = getAnimalMeta();
+  let items = currentAnimal === "all"
+    ? catalog
+    : catalog.filter(it => {
+        const text = `${it.title || ""} ${(it.tags || []).join(" ")}`.toLowerCase();
+        return terms.some(k => text.includes(k.toLowerCase()));
+      });
+
+  if (!ONLY_CC0.checked) return items;
+
+  // Strict CC0 / PD — only exact matches, no fallback
+  return items.filter(it => {
     const lic = (it.license || "").toLowerCase();
     return lic.includes("cc0") || lic.includes("public domain") || lic === "pd";
   });
 }
 
-/** Fetch a random monkey image live from Wikimedia API. */
+/** Fetch a random animal image live from Wikimedia API. */
 async function fetchRandomFromWikimedia() {
-  const searchTerms = ["monkey", "ape", "primate", "chimpanzee", "gorilla", "orangutan", "macaque", "baboon", "gibbon", "tamarin", "marmoset", "capuchin", "lemur"];
-  const term = searchTerms[Math.floor(Math.random() * searchTerms.length)];
+  const { terms } = getAnimalMeta();
+  const term = terms[Math.floor(Math.random() * terms.length)];
   const params = new URLSearchParams({
     action: "query",
     format: "json",
@@ -218,16 +280,21 @@ async function fetchRandomFromWikimedia() {
   if (!data.query || !data.query.pages) return null;
 
   const pages = Object.values(data.query.pages);
-  const filtered = pages.filter(p => p.imageinfo && p.imageinfo[0].thumburl);
-  if (!filtered.length) return null;
+  const withThumb = pages.filter(p => p.imageinfo && p.imageinfo[0].thumburl);
+  if (!withThumb.length) return null;
 
-  // Apply CC0/PD filter if active
+  // Strict CC0/PD filter — when enabled, return null if no compliant images found
   const usePdOnly = ONLY_CC0.checked;
-  const onlyPd = usePdOnly ? filtered.filter(p => {
-    const lic = (p.imageinfo[0].extmetadata?.LicenseShortName?.value || "").toLowerCase();
-    return lic.includes("cc0") || lic.includes("public domain") || lic === "pd";
-  }) : filtered;
-  const pool = onlyPd.length ? onlyPd : filtered;
+  let pool;
+  if (usePdOnly) {
+    pool = withThumb.filter(p => {
+      const lic = (p.imageinfo[0].extmetadata?.LicenseShortName?.value || "").toLowerCase();
+      return lic.includes("cc0") || lic.includes("public domain") || lic === "pd";
+    });
+    if (!pool.length) return null; // strictly enforce: no compliant images, skip
+  } else {
+    pool = withThumb;
+  }
 
   const page = pool[Math.floor(Math.random() * pool.length)];
   const info = page.imageinfo[0];

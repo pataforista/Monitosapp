@@ -8,14 +8,14 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Changos Aleatorios</title>
+  <title>Animales Aleatorios</title>
 </head>
 
 <body>
   <main class="wrap">
     <header class="top">
       <div class="row">
-        <h1>Changos aleatorios</h1>
+        <h1 id="appTitle">Changos aleatorios</h1>
         <button id="btnToggleDiscovery" class="btn small">🔍 Descubrir</button>
       </div>
       <div class="row">
@@ -24,6 +24,17 @@
           <span>Solo CC0 / Dominio público</span>
         </label>
         <span class="pill" id="cacheCount">Cache: 0</span>
+      </div>
+      <div class="row">
+        <label class="toggle">
+          <span>Animal:</span>
+          <div class="animal-btns">
+            <button class="btn small animal-btn active" data-animal="monkey">🐒 Changos</button>
+            <button class="btn small animal-btn" data-animal="cat">🐱 Gatos</button>
+            <button class="btn small animal-btn" data-animal="dog">🐶 Perros</button>
+            <button class="btn small animal-btn" data-animal="all">Todos</button>
+          </div>
+        </label>
       </div>
     </header>
 
@@ -50,7 +61,7 @@
             imagen</a>
         </div>
         <div class="meta-right">
-          <button id="btnNext" class="btn primary">Otro chango</button>
+          <button id="btnNext" class="btn primary">Otro chango 🐒</button>
           <button id="btnFav" class="btn">★ Favorito</button>
           <a id="btnOpenImage" class="link-btn" href="#" target="_blank" rel="noopener noreferrer">Abrir imagen</a>
         </div>

@@ -114,6 +114,10 @@ export async function fetchCategoryMonkeys(categoryName = "Monkeys") {
         const metadata = info.extmetadata;
         const license = metadata.LicenseShortName ? metadata.LicenseShortName.value : "Unknown";
 
+        // Strict legal filter: CC0, Public Domain, PD only
+        const isLegal = /CC0|Public Domain|PD/i.test(license);
+        if (!isLegal) continue;
+
         const fileName = page.title.replace("File:", "");
         // thumburl is a direct upload.wikimedia.org URL — no redirect, CORB-safe.
         const directUrl = info.thumburl || info.url;

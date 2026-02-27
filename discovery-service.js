@@ -3,17 +3,11 @@
  * Filters for CC0 and Public Domain images.
  */
 
-function getSafeMonkeyUrl(fileName, width = 600) {
-    if (!fileName) return "";
-    // Limpia el nombre por si trae "File:"
-    const cleanName = fileName.replace(/^File:/, "").replace(/ /g, "_");
-    return `https://commons.wikimedia.org/w/thumb.php?f=${encodeURIComponent(cleanName)}&w=${width}`;
-}
-
 export async function searchWikimedia(query) {
     const endpoint = "https://commons.wikimedia.org/w/api.php";
 
-    // 1. Search for images
+    // 1. Search for images — request thumburl directly so we get a stable
+    //    upload.wikimedia.org URL instead of a thumb.php redirect (CORB-safe).
     const params = new URLSearchParams({
         action: "query",
         format: "json",
@@ -23,6 +17,7 @@ export async function searchWikimedia(query) {
         gsrlimit: "10",
         prop: "imageinfo",
         iiprop: "url|extmetadata",
+        iiurlwidth: "600",  // makes Wikimedia return info.thumburl on upload.wikimedia.org
         origin: "*"
     });
 
@@ -48,15 +43,17 @@ export async function searchWikimedia(query) {
 
         if (isLegal) {
             const fileName = page.title.replace("File:", "");
+            // thumburl is a direct upload.wikimedia.org URL — no redirect, CORB-safe.
+            const directUrl = info.thumburl || info.url;
             results.push({
                 id: `wm-${page.pageid}`,
                 title: metadata.ObjectName ? metadata.ObjectName.value : fileName,
-                url: getSafeMonkeyUrl(fileName),
+                url: directUrl,
                 source: "Wikimedia Commons",
                 author: metadata.Artist ? metadata.Artist.value.replace(/<[^>]*>/g, "") : "Unknown",
                 license: license,
                 attribution: metadata.License ? metadata.License.value : license,
-                thumb: getSafeMonkeyUrl(fileName, 480)
+                thumb: directUrl
             });
         }
     }
@@ -87,13 +84,15 @@ export async function fetchCategoryMonkeys(categoryName = "Monkeys") {
 
     const members = data.query.categorymembers;
 
-    // 2. Fetch detailed info for these members (to get URLs, authors, licenses)
+    // 2. Fetch detailed info for these members (to get URLs, authors, licenses).
+    //    iiurlwidth makes Wikimedia return thumburl on upload.wikimedia.org (CORB-safe).
     const titles = members.map(m => m.title).join("|");
     const infoParams = new URLSearchParams({
         action: "query",
         format: "json",
         prop: "imageinfo",
         iiprop: "url|extmetadata",
+        iiurlwidth: "600",  // ensures we get a direct upload.wikimedia.org thumburl
         titles: titles,
         origin: "*"
     });
@@ -116,15 +115,17 @@ export async function fetchCategoryMonkeys(categoryName = "Monkeys") {
         const license = metadata.LicenseShortName ? metadata.LicenseShortName.value : "Unknown";
 
         const fileName = page.title.replace("File:", "");
+        // thumburl is a direct upload.wikimedia.org URL — no redirect, CORB-safe.
+        const directUrl = info.thumburl || info.url;
         results.push({
             id: `wm-cat-${page.pageid}`,
             title: metadata.ObjectName ? metadata.ObjectName.value : fileName,
-            url: getSafeMonkeyUrl(fileName),
+            url: directUrl,
             source: "Wikimedia Commons (Categoría: " + categoryName + ")",
             author: metadata.Artist ? metadata.Artist.value.replace(/<[^>]*>/g, "") : "Unknown",
             license: license,
             attribution: metadata.License ? metadata.License.value : license,
-            thumb: getSafeMonkeyUrl(fileName, 480)
+            thumb: directUrl
         });
     }
 

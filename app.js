@@ -25,6 +25,13 @@ const ONLY_CC0 = document.getElementById("onlyCC0");
 const CACHE_COUNT = document.getElementById("cacheCount");
 const APP_TITLE = document.getElementById("appTitle");
 const ANIMAL_BTNS = document.querySelectorAll(".animal-btn");
+const TOAST = document.getElementById("toast");
+const TASKBAR_CLOCK = document.getElementById("taskbarClock");
+const START_BTN = document.getElementById("startBtn");
+const START_MENU = document.getElementById("startMenu");
+const BTN_WIN_CLOSE = document.getElementById("btnClose");
+const BTN_WIN_MIN = document.getElementById("btnMinimize");
+const BTN_WIN_MAX = document.getElementById("btnMaximize");
 
 let currentAnimal = "monkey";
 
@@ -72,6 +79,9 @@ async function init() {
 
   // Apply initial UI labels
   updateAnimalUI();
+
+  // Taskbar + window chrome
+  initTaskbar();
 
   // primera carga
   await showRandom();
@@ -137,13 +147,13 @@ function renderDiscoveryResults(results) {
 function addToCatalog(item) {
   // Evitar duplicados
   if (catalog.some(it => it.id === item.id)) {
-    alert("Esta imagen ya está en tu catálogo.");
+    showToast("⚠ Esta imagen ya está en tu catálogo.");
     return;
   }
 
   catalog.push(item);
   saveExtraItem(item);
-  alert("¡Añadida! Ahora aparecerá cuando pidas 'Otro chango'.");
+  showToast("✔ ¡Añadida! Aparecerá en el catálogo.");
 }
 
 function saveExtraItem(item) {
@@ -245,9 +255,9 @@ function filteredCatalog() {
   let items = currentAnimal === "all"
     ? catalog
     : catalog.filter(it => {
-        const text = `${it.title || ""} ${(it.tags || []).join(" ")}`.toLowerCase();
-        return terms.some(k => text.includes(k.toLowerCase()));
-      });
+      const text = `${it.title || ""} ${(it.tags || []).join(" ")}`.toLowerCase();
+      return terms.some(k => text.includes(k.toLowerCase()));
+    });
 
   if (!ONLY_CC0.checked) return items;
 
@@ -494,6 +504,28 @@ function buildLicenseHtml(item, safeUrl) {
 let audioCtx;
 let userInteracted = false;
 
+// ── Toast Notification ────────────────────────────────────────────────────────
+let _toastTimer = null;
+
+function showToast(msg, duration = 2500) {
+  if (!TOAST) return;
+  TOAST.textContent = msg;
+  TOAST.hidden = false;
+  // Force reflow so the CSS transition fires from the hidden state
+  TOAST.getBoundingClientRect();
+  TOAST.classList.add("show");
+
+  if (_toastTimer) clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => {
+    TOAST.classList.remove("show");
+    setTimeout(() => { TOAST.hidden = true; }, 220);
+  }, duration);
+}
+
+// Expose globally for start-menu inline onclick handlers
+window.showToast = showToast;
+
+
 
 function setupInteractionGate() {
   const markInteraction = () => {
@@ -504,6 +536,85 @@ function setupInteractionGate() {
 
   window.addEventListener("pointerdown", markInteraction, { once: true });
   window.addEventListener("keydown", markInteraction, { once: true });
+}
+
+// ── Taskbar & Window Chrome ───────────────────────────────────────────────────
+function initTaskbar() {
+  // ── Clock ──
+  function updateClock() {
+    if (!TASKBAR_CLOCK) return;
+    const now = new Date();
+    const h = String(now.getHours()).padStart(2, "0");
+    const m = String(now.getMinutes()).padStart(2, "0");
+    TASKBAR_CLOCK.textContent = `${h}:${m}`;
+    TASKBAR_CLOCK.setAttribute("aria-label", `Hora actual: ${h}:${m}`);
+  }
+  updateClock();
+  // Align to the next full minute so the clock always reads on-the-minute
+  const msToNextMinute = (60 - new Date().getSeconds()) * 1000 - new Date().getMilliseconds();
+  setTimeout(() => {
+    updateClock();
+    setInterval(updateClock, 60_000);
+  }, msToNextMinute);
+
+  // ── Start Menu toggle ──
+  if (START_BTN && START_MENU) {
+    START_BTN.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const hidden = START_MENU.hidden;
+      START_MENU.hidden = !hidden;
+      START_BTN.classList.toggle("active", !hidden ? false : true);
+    });
+
+    // Close start menu when clicking elsewhere
+    document.addEventListener("click", (e) => {
+      if (!START_MENU.hidden && !START_MENU.contains(e.target) && e.target !== START_BTN) {
+        START_MENU.hidden = true;
+        START_BTN.classList.remove("active");
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !START_MENU.hidden) {
+        START_MENU.hidden = true;
+        START_BTN.classList.remove("active");
+        START_BTN.focus();
+      }
+    });
+  }
+
+  // ── Window control buttons ──
+  let contentMinimized = false;
+
+  if (BTN_WIN_CLOSE) {
+    BTN_WIN_CLOSE.addEventListener("click", () => {
+      showToast("¿Cerrar? ¡Pero si apenas estamos empezando! 🐒");
+    });
+  }
+
+  if (BTN_WIN_MIN) {
+    BTN_WIN_MIN.addEventListener("click", () => {
+      contentMinimized = !contentMinimized;
+      // Toggle visibility of main content below titlebar
+      const header = document.querySelector(".top");
+      const viewMain = document.getElementById("viewMain");
+      const viewDisc = document.getElementById("viewDiscovery");
+      const statusbar = document.querySelector(".statusbar");
+      [header, viewMain, viewDisc, statusbar].forEach(el => {
+        if (el) el.style.display = contentMinimized ? "none" : "";
+      });
+      BTN_WIN_MIN.title = contentMinimized ? "Restaurar" : "Minimizar";
+    });
+  }
+
+  if (BTN_WIN_MAX) {
+    BTN_WIN_MAX.addEventListener("click", () => {
+      // Toggle maximized class on .wrap
+      const wrap = document.querySelector(".wrap");
+      if (wrap) wrap.classList.toggle("maximized");
+    });
+  }
 }
 
 function addRetroUiSounds() {
@@ -597,6 +708,7 @@ function toggleFav() {
 function updateFavButton() {
   const fav = isFav(currentItem);
   BTN_FAV.textContent = fav ? "★ En favoritos" : "☆ Favorito";
+  BTN_FAV.classList.toggle("btn-fav-active", fav);
 }
 
 async function clearImageCache() {

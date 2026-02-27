@@ -4,107 +4,177 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#111111" />
+  <meta name="theme-color" content="#000080" />
+  <meta name="description"
+    content="Descubre animales aleatorios de dominio público desde Wikimedia Commons. PWA offline-ready." />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <title>Animales Aleatorios</title>
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="top">
-      <div class="row">
-        <h1 id="appTitle">Changos aleatorios</h1>
-        <button id="btnToggleDiscovery" class="btn small">🔍 Descubrir</button>
-      </div>
-      <div class="row">
-        <label class="toggle">
-          <input id="onlyCC0" type="checkbox" checked />
-          <span>Solo CC0 / Dominio público</span>
-        </label>
-        <span class="pill" id="cacheCount">Cache: 0</span>
-      </div>
-      <div class="row">
-        <label class="toggle">
-          <span>Animal:</span>
-          <div class="animal-btns">
-            <button class="btn small animal-btn active" data-animal="monkey">🐒 Changos</button>
-            <button class="btn small animal-btn" data-animal="cat">🐱 Gatos</button>
-            <button class="btn small animal-btn" data-animal="dog">🐶 Perros</button>
-            <button class="btn small animal-btn" data-animal="all">Todos</button>
-          </div>
-        </label>
-      </div>
-    </header>
+  <!-- Toast notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-    <!-- Main View -->
-    <section id="viewMain" class="card">
-      <div class="frame">
-        <img id="img" alt="Chango aleatorio" />
-        <div class="loading" id="loading" hidden>
-          <div class="loading-box">
-            <div class="loading-titlebar">Cargando</div>
-            <div class="loading-body">
-              <span class="loading-label">Cargando imagen…</span>
-              <div class="loading-bar"><span class="loading-fill"></span></div>
+  <!-- Desktop background -->
+  <div class="desktop">
+    <main class="wrap">
+
+      <!-- Window Title Bar -->
+      <div class="titlebar" role="banner">
+        <div class="titlebar-left">
+          <span class="titlebar-icon" aria-hidden="true">🐒</span>
+          <span class="titlebar-title" id="appTitle">Changos aleatorios</span>
+        </div>
+        <div class="titlebar-btns" aria-label="Controles de ventana">
+          <button class="win-btn" id="btnMinimize" title="Minimizar" aria-label="Minimizar">&#x2012;</button>
+          <button class="win-btn" id="btnMaximize" title="Maximizar" aria-label="Maximizar">&#x25A1;</button>
+          <button class="win-btn win-btn-close" id="btnClose" title="Cerrar" aria-label="Cerrar">&#x2715;</button>
+        </div>
+      </div>
+
+      <header class="top">
+        <div class="row">
+          <div class="row-left">
+            <label class="toggle">
+              <input id="onlyCC0" type="checkbox" checked />
+              <span>Solo CC0 / Dominio público</span>
+            </label>
+            <span class="pill" id="cacheCount">Cache: 0</span>
+          </div>
+          <button id="btnToggleDiscovery" class="btn small">🔍 Descubrir</button>
+        </div>
+        <div class="row">
+          <label class="toggle">
+            <span>Animal:</span>
+            <div class="animal-btns">
+              <button class="btn small animal-btn active" data-animal="monkey">🐒 Changos</button>
+              <button class="btn small animal-btn" data-animal="cat">🐱 Gatos</button>
+              <button class="btn small animal-btn" data-animal="dog">🐶 Perros</button>
+              <button class="btn small animal-btn" data-animal="all">Todos</button>
+            </div>
+          </label>
+        </div>
+      </header>
+
+      <!-- Main View -->
+      <section id="viewMain" class="card">
+        <div class="frame">
+          <img id="img" alt="Animal aleatorio" />
+          <div class="loading" id="loading" hidden>
+            <div class="loading-box">
+              <div class="loading-titlebar">Cargando</div>
+              <div class="loading-body">
+                <span class="loading-label">Cargando imagen…</span>
+                <div class="loading-bar"><span class="loading-fill"></span></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="meta">
-        <div class="meta-left">
-          <div class="title" id="imgTitle">—</div>
-          <div class="sub" id="imgSource">—</div>
-          <a id="imgOpenLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">Abrir enlace de la
-            imagen</a>
+        <div class="meta">
+          <div class="meta-left">
+            <div class="title" id="imgTitle">—</div>
+            <div class="sub" id="imgSource">—</div>
+            <a id="imgOpenLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">Abrir enlace de
+              la
+              imagen</a>
+          </div>
+          <div class="meta-right">
+            <button id="btnNext" class="btn primary">Otro chango 🐒</button>
+            <button id="btnFav" class="btn">☆ Favorito</button>
+            <a id="btnOpenImage" class="link-btn" href="#" target="_blank" rel="noopener noreferrer">Abrir imagen</a>
+          </div>
         </div>
-        <div class="meta-right">
-          <button id="btnNext" class="btn primary">Otro chango 🐒</button>
-          <button id="btnFav" class="btn">★ Favorito</button>
-          <a id="btnOpenImage" class="link-btn" href="#" target="_blank" rel="noopener noreferrer">Abrir imagen</a>
+
+        <details class="details">
+          <summary>Licencia / atribución</summary>
+          <div id="licenseBox" class="license">—</div>
+        </details>
+
+        <div class="hint">
+          💡 Instala la PWA y úsala offline. Las imágenes vistas se van guardando en caché.
         </div>
-      </div>
+      </section>
 
-      <details class="details">
-        <summary>Licencia / atribución</summary>
-        <div id="licenseBox" class="license">—</div>
-      </details>
-
-      <div class="hint">
-        Tip: instala la PWA y úsala offline. Las imágenes vistas se van guardando en caché.
-      </div>
-    </section>
-
-    <!-- Discovery View (Hidden by default) -->
-    <section id="viewDiscovery" class="card" hidden>
-      <div class="discovery-head">
-        <h2>Buscador Legal (Wikimedia)</h2>
-        <div class="row">
-          <input type="text" id="searchQuery" placeholder="Ej: monkey, ape, chimpanzee..." class="input" />
-          <button id="btnSearch" class="btn primary">Buscar</button>
+      <!-- Discovery View (Hidden by default) -->
+      <section id="viewDiscovery" class="card" hidden>
+        <div class="discovery-head">
+          <h2>Buscador Legal (Wikimedia)</h2>
+          <div class="row">
+            <input type="text" id="searchQuery" placeholder="Ej: monkey, ape, chimpanzee..." class="input" />
+            <button id="btnSearch" class="btn primary">Buscar</button>
+          </div>
+          <div class="row discovery-category-row">
+            <button id="btnDiscoverCategory" class="btn small primary btn-full-width">Descubrir Categoría:
+              Monkeys</button>
+          </div>
         </div>
-        <div class="row" style="margin-top: 5px;">
-          <button id="btnDiscoverCategory" class="btn small primary" style="width: 100%;">Descubrir Categoría:
-            Monkeys</button>
+        <div id="discoveryResults" class="results-grid">
+          <!-- Results will appear here -->
+          <div class="empty-msg">Busca imágenes CC0 para tu catálogo.</div>
         </div>
-      </div>
-      <div id="discoveryResults" class="results-grid">
-        <!-- Results will appear here -->
-        <div class="empty-msg">Busca imágenes CC0 para tu catálogo.</div>
-      </div>
-      <div class="discovery-foot">
-        <button id="btnBack" class="btn">Volver al catálogo</button>
-      </div>
-    </section>
+        <div class="discovery-foot">
+          <button id="btnBack" class="btn">Volver al catálogo</button>
+        </div>
+      </section>
 
+      <!-- Status Bar (Win95 style) -->
+      <footer class="statusbar">
+        <div class="statusbar-panel statusbar-main">
+          <span id="status">Listo.</span>
+        </div>
+        <div class="statusbar-panel statusbar-actions">
+          <button id="btnClear" class="btn danger small">🗑 Borrar caché</button>
+        </div>
+      </footer>
 
-    <footer class="foot">
-      <button id="btnClear" class="btn danger">Borrar caché de imágenes</button>
-      <span class="small" id="status">Listo.</span>
-    </footer>
-  </main>
+    </main>
+  </div>
+
+  <!-- Windows 95 Taskbar -->
+  <div id="taskbar" class="taskbar" role="toolbar" aria-label="Barra de tareas">
+    <button class="start-btn" id="startBtn" aria-label="Inicio">
+      <span class="start-logo" aria-hidden="true">⊞</span>
+      <span class="start-text">Inicio</span>
+    </button>
+    <div class="taskbar-divider"></div>
+    <div class="taskbar-apps">
+      <button class="taskbar-app active-app" aria-current="true">
+        <span aria-hidden="true">🐒</span>
+        <span class="taskbar-app-label">Animales</span>
+      </button>
+    </div>
+    <div class="taskbar-tray">
+      <div class="tray-clock" id="taskbarClock" aria-live="off" aria-label="Hora actual">00:00</div>
+    </div>
+  </div>
+
+  <!-- Start Menu (hidden by default) -->
+  <div id="startMenu" class="start-menu" hidden role="menu" aria-label="Menú Inicio">
+    <div class="start-menu-header">
+      <span class="start-menu-logo" aria-hidden="true">🐒</span>
+      <span class="start-menu-user">Animales Aleatorios</span>
+    </div>
+    <div class="start-menu-body">
+      <button class="start-menu-item" role="menuitem" onclick="window.location.reload()">🔄 Reiniciar app</button>
+      <button class="start-menu-item" role="menuitem"
+        onclick="document.getElementById('btnClear').click(); document.getElementById('startMenu').hidden = true;">🗑
+        Borrar caché</button>
+      <hr class="start-menu-sep" />
+      <button class="start-menu-item" role="menuitem" onclick="window.open('https://commons.wikimedia.org','_blank')">🌐
+        Wikimedia Commons</button>
+    </div>
+    <div class="start-menu-footer">
+      <button class="start-menu-item shutdown" role="menuitem"
+        onclick="document.getElementById('startMenu').hidden=true; showToast('¡Hasta luego! 🐒')">⏻ Cerrar
+        sesión</button>
+    </div>
+  </div>
 
   <script src="app.js" type="module"></script>
 </body>
